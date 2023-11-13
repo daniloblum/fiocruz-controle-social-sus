@@ -13,6 +13,10 @@
 	transform: translateX(-100%);
 }
 
+.sidebar.modulo1 {
+	--fio-ref-color-extra: 75, 49%;
+}
+
 .sidebar .sidebar__section--contrast {
 	background-color: var(--fio-sys-color-primary-light-contrast);
 }
@@ -185,7 +189,7 @@
 	opacity: 1;
 	font-variation-settings: 'FILL' 1;
 	font-weight: 600;
-	background: radial-gradient(var(--fio-sys-color-primary-light-dark) 50%, transparent 0%);
+	background: radial-gradient(var(--fio-sys-color-primary-dark) 50%, transparent 0%);
 }
 
 /* Vertical Line */

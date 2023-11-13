@@ -1,17 +1,15 @@
 /* SYSTEM UI VARIABLES */
 
-@import '-reference.css';
-
 :root {
 	/* --- COLORS --- */
 
 	/* Primary - 60% layout*/
-	--fio-sys-color-primary-light: var(--fio-ref-color-primary-70);
-	--fio-sys-color-primary-light-contrast: var(--fio-ref-color-primary-20);
-	--fio-sys-color-primary-medium: var(--fio-ref-color-primary-40);
-	--fio-sys-color-primary-medium-contrast: var(--fio-ref-color-primary-95);
-	--fio-sys-color-primary-dark: var(--fio-ref-color-primary-30);
-	--fio-sys-color-primary-dark-contrast: var(--fio-ref-color-primary-80);
+	--fio-sys-color-primary-light: var(--fio-ref-color-extra-70);
+	--fio-sys-color-primary-light-contrast: var(--fio-ref-color-extra-20);
+	--fio-sys-color-primary-medium: var(--fio-ref-color-extra-40);
+	--fio-sys-color-primary-medium-contrast: var(--fio-ref-color-extra-95);
+	--fio-sys-color-primary-dark: var(--fio-ref-color-extra-30);
+	--fio-sys-color-primary-dark-contrast: var(--fio-ref-color-extra-80);
 
 	--fio-sys-color-primary-background-light: var(--fio-ref-color-primary-99);
 
@@ -203,7 +201,7 @@
 	--fio-sys-typography-quotation-style: var(--fio-ref-typography-style-italic);
 
 	/* Olho de Texto (Highlight) */
-	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-secondary-bold);
+	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-secondary-black);
 	--fio-sys-typography-highlight-line-height: var(--fio-ref-typography-height-lg);
 
 	/* ELEMENTS */
@@ -258,4 +256,38 @@
 	--fio-sys-card-elevation-md: var(--fio-ref-shape-elevation-md);
 	--fio-sys-card-elevation-lg: var(--fio-ref-shape-elevation-lg);
 	--fio-sys-card-elevation-xl: var(--fio-ref-shape-elevation-xl);
+}
+
+/* modul 1 */
+body.modulo1 {
+	--fio-sys-color-primary-light: var(--fio-ref-color-primary-70);
+	--fio-sys-color-primary-light-contrast: var(--fio-ref-color-primary-20);
+	--fio-sys-color-primary-medium: var(--fio-ref-color-primary-40);
+	--fio-sys-color-primary-medium-contrast: var(--fio-ref-color-primary-95);
+	--fio-sys-color-primary-dark: var(--fio-ref-color-primary-30);
+	--fio-sys-color-primary-dark-contrast: var(--fio-ref-color-primary-80);
+
+	--fio-sys-color-primary-background-light: var(--fio-ref-color-primary-99);
+}
+/* modulo 2 */
+body.modulo2 {
+	--fio-sys-color-primary-light: var(--fio-ref-color-secondary-70);
+	--fio-sys-color-primary-light-contrast: var(--fio-ref-color-secondary-20);
+	--fio-sys-color-primary-medium: var(--fio-ref-color-secondary-40);
+	--fio-sys-color-primary-medium-contrast: var(--fio-ref-color-secondary-95);
+	--fio-sys-color-primary-dark: var(--fio-ref-color-secondary-30);
+	--fio-sys-color-primary-dark-contrast: var(--fio-ref-color-secondary-80);
+
+	--fio-sys-color-primary-background-light: var(--fio-ref-color-secondary-99);
+}
+/* modulo 3 */
+body.modulo3 {
+	--fio-sys-color-primary-light: var(--fio-ref-color-tertiary-70);
+	--fio-sys-color-primary-light-contrast: var(--fio-ref-color-tertiary-20);
+	--fio-sys-color-primary-medium: var(--fio-ref-color-tertiary-40);
+	--fio-sys-color-primary-medium-contrast: var(--fio-ref-color-tertiary-95);
+	--fio-sys-color-primary-dark: var(--fio-ref-color-tertiary-30);
+	--fio-sys-color-primary-dark-contrast: var(--fio-ref-color-tertiary-80);
+
+	--fio-sys-color-primary-background-light: var(--fio-ref-color-tertiary-99);
 }
