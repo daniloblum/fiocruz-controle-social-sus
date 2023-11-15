@@ -1,7 +1,15 @@
 /* --- ABA ---  */
+.aba {
+	--_nav-color: var(--fio-sys-color-accent-medium, red);
+	--_nav-color-hover: var(--fio-sys-color-accent-dark, red);
+	--_nav-background: var(--fio-sys-color-accent-medium-contrast, red);
+	--_nav-background-hover: var(--fio-sys-color-accent-dark-contrast, red);
 
+	--_content-color: var(--fio-sys-color-primary-light, red);
+	--_content-background: var(--fio-sys-color-primary-medium-contrast, red);
+}
 .aba .nav {
-	background-color: var(--fio-sys-color-accent-medium-contrast);
+	background-color: var(--_nav-background);
 	border-radius: var(--fio-sys-spacing-border-radius-xl);
 }
 
@@ -11,29 +19,30 @@
 .aba .nav.nav-fill .nav-item .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
-	color: var(--fio-sys-color-accent-medium);
+	color: var(--_nav-color);
 	text-decoration: none;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 .aba .nav.nav-pills .nav-link.active,
 .aba .nav.nav-pills .show > .nav-link {
-	color: var(--fio-sys-color-accent-medium);
+	color: var(--_nav-color);
 	background-color: transparent;
-	border-color: var(--fio-sys-color-accent-medium);
+	border-color: var(--_nav-color);
 	border-width: var(--fio-sys-spacing-border-width-md);
 	border-style: solid;
 	border-radius: var(--fio-sys-spacing-border-radius-full);
 }
 .aba .nav .nav-link:focus,
 .aba .nav .nav-link:hover {
-	color: var(--fio-sys-color-accent-dark);
-	border-color: var(--fio-sys-color-accent-dark);
+	background-color: var(--_nav-background-hover);
+	border-color: var(--_nav-color-hover);
 	border-radius: var(--fio-sys-spacing-border-radius-full);
+	color: var(--_nav-color-hover);
 }
 
 .aba .tab-content {
-	background-color: var(--fio-sys-color-primary-medium-contrast);
-	border-color: var(--fio-sys-color-primary-light);
+	background-color: var(--_content-background);
+	border-color: var(--_content-color);
 	border-width: var(--fio-sys-spacing-border-width-sm);
 	border-style: solid;
 	border-radius: var(--fio-sys-spacing-border-radius-md);

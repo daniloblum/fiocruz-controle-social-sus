@@ -1,5 +1,10 @@
 /* --- ACCORDION --- */
-
+.accordion {
+	--_button-color: var(--fio-sys-color-accent-medium);
+	--_button-background: var(--fio-sys-color-accent-medium-contrast);
+	--_content-color: ;
+	--_content-background: var(--fio-sys-color-neutral-background-light);
+}
 .accordion .accordion-item:first-of-type {
 	border-top-left-radius: var(--fio-sys-spacing-border-radius-lg);
 	border-top-right-radius: var(--fio-sys-spacing-border-radius-lg);
@@ -11,7 +16,7 @@
 
 .accordion-item .accordion-button {
 	font-size: var(--fio-sys-typography-paragraph-size);
-	color: var(--fio-sys-color-accent-medium);
+	color: var(--_button-color);
 	font-weight: 700;
 }
 .accordion-item:first-of-type .accordion-button {
@@ -23,8 +28,8 @@
 	border-bottom-left-radius: var(--fio-sys-spacing-border-radius-lg);
 }
 .accordion-button:not(.collapsed) {
-	color: var(--fio-sys-color-accent-medium);
-	background-color: var(--fio-sys-color-accent-medium-contrast);
+	color: var(--_button-color);
+	background-color: var(--_button-background);
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
@@ -36,7 +41,7 @@
 }
 
 .accordion .accordion-item .accordion-collapse {
-	background-color: var(--fio-sys-color-neutral-background-light);
+	background-color: var(--_content-background);
 }
 .accordion .accordion-item:last-of-type .accordion-collapse {
 	border-bottom-right-radius: var(--fio-sys-spacing-border-radius-lg);

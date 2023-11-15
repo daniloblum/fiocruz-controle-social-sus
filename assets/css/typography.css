@@ -1,7 +1,12 @@
 /* TYPOGRAPHY */
 
 body {
-	color: var(--fio-sys-typography-paragraph-color);
+	--_text-color: var(--fio-sys-color-text-dark);
+	--_title-color: var(--fio-sys-color-primary-medium);
+	--_accent-color: var(--fio-sys-color-accent-medium);
+	--_accent-color--hover: var(--fio-sys-color-accent-dark);
+
+	color: var(--_text-color);
 	font-family: var(--fio-sys-typography-paragraph-family);
 	/* font-size: var(--fio-sys-typography-paragraph-size); */
 }
@@ -13,7 +18,7 @@ body {
 
 a,
 a:visited {
-	color: var(--fio-sys-typography-link-color);
+	color: var(--_accent-color);
 	font-family: var(--fio-sys-typography-link-family);
 	font-weight: var(--fio-sys-typography-link-weight);
 	text-decoration: none;
@@ -21,7 +26,7 @@ a:visited {
 	overflow-wrap: anywhere;
 }
 a:hover {
-	color: var(--fio-sys-typography-link-color--hover);
+	color: var(--_accent-color--hover);
 	text-decoration: underline;
 }
 
@@ -56,7 +61,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	color: var(--fio-sys-typography-head-color);
+	color: var(--_title-color);
 	font-family: var(--fio-sys-typography-head-family);
 	font-weight: var(--fio-sys-typography-head-weight);
 	line-height: var(--fio-sys-typography-head-md-line-height);
@@ -88,7 +93,7 @@ h6,
 }
 
 p {
-	color: var(--fio-sys-typography-paragraph-color);
+	color: var(--_text-color);
 	font-family: var(--fio-sys-typography-paragraph-family);
 	font-size: var(--fio-sys-typography-paragraph-size);
 	font-weight: var(--fio-sys-typography-paragraph-weight);

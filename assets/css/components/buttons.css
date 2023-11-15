@@ -1,11 +1,21 @@
 /* BUTTON */
 
 /* Base button */
+.fio-button {
+	--_color1: var(--fio-sys-color-neutral-white, red);
+	--_color2: var(--fio-sys-color-accent-medium-contrast, red);
+	--_color3: var(--fio-sys-color-accent-medium, red);
+	--_color4: var(--fio-sys-color-accent-dark, red);
+	--_color5: var(--fio-sys-color-accent-light-contrast, red);
+
+	--_color2--hover: var(--fio-sys-color-neutral-white, red);
+	--_radius: var(--fio-sys-spacing-border-radius-full);
+}
 
 button,
 .fio-button {
 	cursor: pointer;
-	border-radius: var(--fio-component-button-border-radius);
+	border-radius: var(--_radius);
 	border-style: solid;
 	border-width: var(--fio-component-button-border-width);
 	display: inline-block;
@@ -23,74 +33,66 @@ button,
 /* Primary button */
 
 .fio-button-primary {
-	background-color: var(--fio-component-button-color-primary);
-	color: var(--fio-component-button-color-white) !important;
-	border-color: var(--fio-component-button-color-primary);
+	background-color: var(--_color3);
+	border-color: var(--_color3);
+	color: var(--_color1) !important;
 }
 .fio-button-primary:hover,
 .fio-button-primary:focus {
-	background-color: var(--fio-component-button-color-primary--hover);
-	color: var(--fio-component-button-color-white);
-	border-color: var(--fio-component-button-color-primary--hover);
+	background-color: var(--_color4);
+	border-color: var(--_color4);
+	color: var(--_color1);
 }
-/* .fio-button-primary:focus {
-	outline-color: var(--fio-component-button-color-border--focus);
-	outline-width: 2px;
-	outline-style: solid;
-} */
 .fio-button-primary:active {
-	background-color: var(--fio-component-button-color-primary--active);
-	border-color: var(--fio-component-button-color-primary--active);
-	color: var(--fio-sys-color-neutral-white);
+	background-color: var(--_color5);
+	border-color: var(--_color5);
+	color: var(--_color2);
 }
 
 /* Primary outline button */
 
 .fio-button-outline-primary {
 	background-color: transparent;
-	color: var(--fio-component-button-color-primary);
-	border-color: var(--fio-component-button-color-primary);
+	border-color: var(--_color3);
+	color: var(--_color3);
 }
 .fio-button-outline-primary:hover,
 .fio-button-outline-primary:focus {
-	background-color: var(--fio-component-button-outline-color-primary--hover);
-	color: var(--fio-component-button-color-primary--hover);
-	border-color: var(--fio-component-button-color-primary--hover);
+	background-color: var(--_color2);
+	border-color: var(--_color4);
+	color: var(--_color4);
 }
-/* .fio-button-outline-primary:focus {
-	outline-color: var(--fio-component-button-color-border--focus);
-} */
 .fio-button-outline-primary:active {
-	background-color: var(--fio-component-button-color-primary--active);
-	border-color: var(--fio-component-button-color-primary--active);
+	background-color: var(--_color5);
+	border-color: var(--_color5);
+	color: var(--_color2);
 }
 
 /* Primary text button */
 
 .fio-button-text-primary {
 	background-color: transparent;
-	color: var(--fio-component-button-color-primary);
 	border-color: transparent;
+	color: var(--_color3);
 }
-.fio-button-text-primary:hover {
-	background-color: var(--fio-component-button-text-color-primary--hover);
-	color: var(--fio-component-button-color-primary--hover);
+.fio-button-text-primary:hover,
+.fio-button-text-primary:focus {
+	background-color: var(--_color2);
 	border-color: transparent;
+	color: var(--_color4);
 }
-/* .fio-button-text-primary:focus {
-	outline-color: var(--fio-component-button-color-border--focus);
-} */
 .fio-button-text-primary:active {
-	color: var(--fio-component-button-color-primary--active);
-	background-color: var(--fio-component-button-text-color-primary--hover);
+	background-color: var(--_color5);
+	border-color: var(--_color5);
+	color: var(--_color2);
 }
 
 /* Secondary button */
 
 .fio-button-secondary {
-	background-color: var(--fio-component-button-color-white);
+	background-color: var(--_color1);
+	border-color: var(--_);
 	color: var(--fio-component-button-color-primary);
-	border-color: var(--fio-component-button-color-white);
 }
 .fio-button-secondary:hover {
 	background-color: var(--fio-component-button-color-primary--hover);
@@ -109,8 +111,8 @@ button,
 
 .fio-button-outline-secondary {
 	background-color: transparent;
-	color: var(--fio-component-button-color-white) !important;
-	border-color: var(--fio-component-button-color-white);
+	border-color: var(--_color1);
+	color: var(--_color1) !important;
 }
 .fio-button-outline-secondary:hover,
 .fio-button-outline-secondary:focus {
