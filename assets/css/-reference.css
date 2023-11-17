@@ -12,6 +12,7 @@
 	--fio-ref-color-warning: 50, 100%;
 	--fio-ref-color-error: 5, 70%;
 	--fio-ref-color-extra: 287, 44%; /* cor de capa - roxo */
+	--fio-ref-color-extra2: 337, 44%; /* cor de capa - bordo */
 
 	/* Palettes */
 
@@ -140,6 +141,20 @@
 	--fio-ref-color-extra-95: hsl(var(--fio-ref-color-extra), 95%);
 	--fio-ref-color-extra-99: hsl(var(--fio-ref-color-extra), 99%);
 	--fio-ref-color-extra-100: hsl(var(--fio-ref-color-extra), 100%);
+
+	--fio-ref-color-extra2-0: hsl(var(--fio-ref-color-extra2), 0%);
+	--fio-ref-color-extra2-10: hsl(var(--fio-ref-color-extra2), 10%);
+	--fio-ref-color-extra2-20: hsl(var(--fio-ref-color-extra2), 20%);
+	--fio-ref-color-extra2-30: hsl(var(--fio-ref-color-extra2), 30%);
+	--fio-ref-color-extra2-40: hsl(var(--fio-ref-color-extra2), 40%);
+	--fio-ref-color-extra2-50: hsl(var(--fio-ref-color-extra2), 50%);
+	--fio-ref-color-extra2-60: hsl(var(--fio-ref-color-extra2), 60%);
+	--fio-ref-color-extra2-70: hsl(var(--fio-ref-color-extra2), 70%);
+	--fio-ref-color-extra2-80: hsl(var(--fio-ref-color-extra2), 80%);
+	--fio-ref-color-extra2-90: hsl(var(--fio-ref-color-extra2), 90%);
+	--fio-ref-color-extra2-95: hsl(var(--fio-ref-color-extra2), 95%);
+	--fio-ref-color-extra2-99: hsl(var(--fio-ref-color-extra2), 99%);
+	--fio-ref-color-extra2-100: hsl(var(--fio-ref-color-extra2), 100%);
 
 	/* --- SIZE --- */
 
