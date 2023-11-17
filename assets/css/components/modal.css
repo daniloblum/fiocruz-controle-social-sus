@@ -1,6 +1,9 @@
 /* --- MODAL --- */
 
 .modal {
+	--_modal-header-background: var(--fio-sys-color-primary-medium-contrast);
+	--_modal-header-text: var(--fio-sys-color-primary-medium);
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -27,8 +30,8 @@
 }
 
 .modal .modal-header {
-	background-color: var(--fio-component-card-header-background);
-	color: var(--fio-sys-typography-head-color);
+	background-color: var(--_modal-header-background);
+	color: var(--_modal-header-text);
 	font-family: var(--fio-sys-typography-head-family);
 	font-size: var(--fio-sys-typography-head-xs-size);
 	font-weight: var(--fio-sys-typography-head-weight);
