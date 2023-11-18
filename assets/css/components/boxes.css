@@ -25,6 +25,24 @@
 	box-shadow: 4px 8px 0px var(--_box-card-shadow);
 }
 
+.box[data-box="importante"] .card {
+	border-color: var(--_box-card-color--refletir);
+	box-shadow: 4px 8px 0px var(--_box-card-shadow--refletir);
+}
+
+.box[data-box="importante"] .card .card-header {
+	background-color: var(--_box-card-background--refletir);
+    border-color: var(--_box-card-color--refletir);
+	color: var(--fio-sys-typography-link-color--hover);
+}
+
+.box[data-box="importante"] .card .card-body p,
+.box[data-box="importante"] .card .card-body li,
+.box[data-box="importante"] .card .card-body span {
+	font-size:var(--fio-sys-typography-head-xs-size);
+	color:var(--_box-card-color--refletir);
+}
+
 .box .card .card-header {
 	background-color: var(--_box-header-background);
 	border-color: var(--_box-header-color);
@@ -62,11 +80,31 @@
 	vertical-align: middle;
 }
 
+.box .card .card-body p,
+.box .card .card-body li,
+.box .card .card-body span {
+	font-size:var(--fio-sys-typography-head-xs-size);
+	color:var(--fio-sys-color-primary-dark);
+}
+
+.box[data-box="reflexão"] .card .card-body p,
+.box[data-box="reflexão"] .card .card-body li,
+.box[data-box="reflexão"] .card .card-body span {
+	font-size:var(--fio-sys-typography-head-xs-size);
+	color:var(--_box-card-color--refletir);
+}
+
 /* Atenção */
 .box[data-box='atenção'] .card .card-header .icone::before {
 	/* content: 'priority_high'; */
 	content: 'priority_high';
 }
+
+.box[data-box='importante'] .card .card-header .icone::before {
+	/* content: 'priority_high'; */
+	content: 'priority_high';
+}
+
 /* Curiosidade */
 .box[data-box='curiosidade'] .card .card-header .icone::before {
 	content: 'question_mark';
