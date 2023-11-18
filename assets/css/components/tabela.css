@@ -2,10 +2,20 @@
 
 .table {
 	background-color: var(--fio-sys-color-neutral-white);
+	margin-bottom: 0;
+}
+
+.table td,
+.table th {
+	padding: var(--fio-sys-spacing-padding-md);
 }
 
 .table > :not(:first-child) {
 	border-top: none;
+}
+
+.table-responsive {
+	border-radius: var(--fio-sys-spacing-border-radius-md);
 }
 
 .table-responsive.table-bordered {
