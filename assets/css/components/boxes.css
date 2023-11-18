@@ -126,8 +126,8 @@
 	content: 'auto_stories';
 }
 
-/* Para assistir */
-.box[data-box='para assistir'] .card .card-header .icone::before {
+/* Vídeo */
+.box[data-box='vídeo'] .card .card-header .icone::before {
 	content: 'movie';
 }
 
