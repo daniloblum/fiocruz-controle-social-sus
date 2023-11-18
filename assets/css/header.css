@@ -103,7 +103,7 @@
 
 @media (min-width: 992px) {
 	.header {
-		height: 150px;
+		height: 100px;
 		justify-content: space-between;
 	}
 	.header .mobile-toggle-open {
