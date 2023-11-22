@@ -22,6 +22,9 @@
 	color: var(--_nav-color);
 	text-decoration: none;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
 }
 .aba .nav.nav-pills .nav-link.active,
 .aba .nav.nav-pills .show > .nav-link {

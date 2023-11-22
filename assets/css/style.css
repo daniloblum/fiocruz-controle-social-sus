@@ -71,7 +71,7 @@ figure img {
 figcaption.figure-caption {
 	font-size: 75%;
 	color: var(--fio-sys-color-text-light);
-	text-align: right;
+	text-align: center;
 	margin-top: var(--fio-sys-spacing-margin-sm);
 }
 
@@ -361,22 +361,22 @@ section .page-nav .fio-button {
 /* Divisores */
 
 .custom-shape-divider-bottom-1700248991 {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1700248991 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 71px;
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 71px;
 }
 
 .custom-shape-divider-bottom-1700248991 .shape-fill {
-    fill: #FFFFFF;
+	fill: #ffffff;
 }
