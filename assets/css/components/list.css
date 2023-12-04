@@ -91,7 +91,7 @@
 	counter-reset: contador-ol;
 }
 .list .list-group.list-group-numbered .list-group-item {
-	padding-left: 20px;
+	padding-left: var(--fio-sys-spacing-padding-xl);
 }
 .list .list-group.list-group-numbered .list-group-item > .list-group {
 	counter-reset: subcontador-ol;

@@ -1,9 +1,9 @@
 /* --- ACCORDION --- */
 .accordion {
-	--_button-color: var(--fio-sys-color-accent-medium);
-	--_button-background: var(--fio-sys-color-accent-medium-contrast);
+	--_button-color: var(--fio-sys-color-accent-medium, red);
+	--_button-background: var(--fio-sys-color-accent-medium-contrast, red);
 	--_content-color: ;
-	--_content-background: var(--fio-sys-color-neutral-background-light);
+	--_content-background: var(--fio-sys-color-neutral-white, red);
 }
 .accordion .accordion-item:first-of-type {
 	border-top-left-radius: var(--fio-sys-spacing-border-radius-lg);
