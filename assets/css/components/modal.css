@@ -42,3 +42,10 @@
 	border-top-left-radius: var(--fio-sys-spacing-border-radius-xl);
 	border-top-right-radius: var(--fio-sys-spacing-border-radius-xl);
 }
+
+.modal .modal-header .modal-title {
+	line-height: 1;
+}
+.modal .modal-lg .modal-body {
+	padding: var(--fio-sys-spacing-padding-xl);
+}

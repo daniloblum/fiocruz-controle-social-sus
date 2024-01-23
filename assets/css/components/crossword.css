@@ -1,0 +1,112 @@
+/* --- CROSSWORD --- */
+
+.ecw-answerbox {
+	/* color: black;
+	background-color: #fffaf0;
+	border-color: #808080;
+	border-style: solid;
+	border-width: 1px;
+	display: block; */
+	padding: 20px;
+}
+
+.ecw-box {
+	border-style: solid;
+	border-width: 2px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	height: 35px;
+	overflow: hidden;
+	text-align: center;
+	width: 35px;
+}
+
+.ecw-boxcheated_sel {
+	background-color: #fff1d7;
+	border-color: #c00000;
+	color: #2080d0;
+}
+
+.ecw-boxcheated_unsel {
+	background-color: #ffffff;
+	border-color: #606060;
+	color: #2080d0;
+}
+
+.ecw-boxerror_sel {
+	background-color: #fff1d7;
+	border-color: #c00000;
+	color: #bf0000;
+}
+
+.ecw-boxerror_unsel {
+	background-color: #fff0f0;
+	border-color: #606060;
+	color: #bf0000;
+}
+
+.ecw-boxnormal_sel {
+	background-color: #fff1d7;
+	border-color: #c00000;
+	color: #000000;
+}
+
+.ecw-boxnormal_unsel {
+	background-color: #ffffff;
+	border-color: #606060;
+	color: #000000;
+}
+
+.ecw-button {
+	width: 64pt;
+}
+
+.ecw-cluebox {
+	border-bottom-width: 1px;
+	border-color: #c0c0c0;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-style: solid;
+	border-top-width: 1px;
+	margin-top: 1em;
+	padding-bottom: 0.5em;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	padding-top: 0.5em;
+}
+
+.ecw-crosswordarea {
+	/* background-color: #d0d8e0;
+	border-color: #808080;
+	border-style: solid;
+	border-width: 2px; */
+	padding: 0.5em;
+}
+
+.ecw-copyright {
+	margin-bottom: 1em;
+	font-size: x-small;
+	font-family: 'Segoe UI', 'Franklin Gothic Medium', 'Arial', sans-serif;
+}
+
+.ecw-input {
+	font-family: 'Segoe UI', 'Verdana', 'Arial', sans-serif;
+}
+
+.ecw-wordlabel {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.ecw-wordinfo {
+	font-size: 8pt;
+	color: #808080;
+}
+
+.ecw-worderror {
+	color: #c00000;
+	font-weight: bold;
+	display: none;
+	margin-top: 1em;
+}
