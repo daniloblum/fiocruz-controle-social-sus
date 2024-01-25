@@ -129,6 +129,15 @@
 	margin: 0 auto;
 }
 
+.flipcard .flip-card-front .card-footer .fio-button-outline-secondary {
+    background-color: rgba(255,255,255,.25);
+}
+
+.flipcard .flip-card-front .card-footer .fio-button-outline-secondary:hover, 
+.flipcard .flip-card-front .card-footer.fio-button-outline-secondary:focus {
+    background-color: var(--fio-component-button-color-primary--hover);
+}
+
 /*Tamanho do ícone do botão da frente*/
 .flipcard .flip-card-front .card-footer .fio-button svg {
 	fill: #fff;
@@ -140,11 +149,15 @@
 }
 
 /*Fundos para flipcard*/
-.flipcard .flip-card .fundo1 {
+.flipcard .flip-card .fundo1{
 	background-image: url(../../../sources/recursos-visuais/images/fundo-flipcard.jpg);
 	background-size: cover;
 	background-color: var(--fio-sys-color-primary-light);
 	border-color: var(--fio-sys-color-primary-light);
+}
+
+.flipcard .flip-card .mod3{
+	background-image: url(../../../sources/recursos-visuais/images/fundo-flipcard-mod3.jpg);
 }
 
 /*Configuração do verso*/
