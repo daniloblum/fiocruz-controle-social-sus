@@ -1,6 +1,15 @@
 /* --- CROSSWORD --- */
 
-.ecw-answerbox {
+.fio-crossword {
+	--crossword-square: 35px;
+	--crossword-square-mobile: 20px;
+	--crossword-square-font-size: 18px;
+	--crossword-square-font-size-mobile: 10px;
+	--crossword-square-line-heigh: 1;
+	--crossword-square-line-height-mobile: 1.25;
+}
+
+.fio-crossword .fio-answerbox {
 	/* color: black;
 	background-color: #fffaf0;
 	border-color: #808080;
@@ -10,59 +19,60 @@
 	padding: 20px;
 }
 
-.ecw-box {
+.fio-crossword .fio-box {
 	border-style: solid;
 	border-width: 2px;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: var(--crossword-square-font-size-mobile);
 	font-weight: bold;
-	height: 35px;
+	line-height: var(--crossword-square-line-height-mobile);
+	height: var(--crossword-square-mobile);
 	overflow: hidden;
 	text-align: center;
-	width: 35px;
+	width: var(--crossword-square-mobile);
 }
 
-.ecw-boxcheated_sel {
+.fio-crossword .fio-boxcheated_sel {
 	background-color: #fff1d7;
 	border-color: #c00000;
 	color: #2080d0;
 }
 
-.ecw-boxcheated_unsel {
+.fio-crossword .fio-boxcheated_unsel {
 	background-color: #ffffff;
 	border-color: #606060;
 	color: #2080d0;
 }
 
-.ecw-boxerror_sel {
+.fio-crossword .fio-boxerror_sel {
 	background-color: #fff1d7;
 	border-color: #c00000;
 	color: #bf0000;
 }
 
-.ecw-boxerror_unsel {
+.fio-crossword .fio-boxerror_unsel {
 	background-color: #fff0f0;
 	border-color: #606060;
 	color: #bf0000;
 }
 
-.ecw-boxnormal_sel {
+.fio-crossword .fio-boxnormal_sel {
 	background-color: #fff1d7;
 	border-color: #c00000;
 	color: #000000;
 }
 
-.ecw-boxnormal_unsel {
+.fio-crossword .fio-boxnormal_unsel {
 	background-color: #ffffff;
 	border-color: #606060;
 	color: #000000;
 }
 
-.ecw-button {
+/* .fio-crossword .fio-button {
 	width: 64pt;
-}
+} */
 
-.ecw-cluebox {
+.fio-crossword .fio-cluebox {
 	border-bottom-width: 1px;
 	border-color: #c0c0c0;
 	border-left-width: 0px;
@@ -76,7 +86,7 @@
 	padding-top: 0.5em;
 }
 
-.ecw-crosswordarea {
+.fio-crossword .fio-crosswordarea {
 	/* background-color: #d0d8e0;
 	border-color: #808080;
 	border-style: solid;
@@ -84,29 +94,38 @@
 	padding: 0.5em;
 }
 
-.ecw-copyright {
+.fio-crossword .fio-copyright {
 	margin-bottom: 1em;
 	font-size: x-small;
 	font-family: 'Segoe UI', 'Franklin Gothic Medium', 'Arial', sans-serif;
 }
 
-.ecw-input {
+.fio-crossword .fio-input {
 	font-family: 'Segoe UI', 'Verdana', 'Arial', sans-serif;
 }
 
-.ecw-wordlabel {
+.fio-crossword .fio-wordlabel {
 	text-transform: uppercase;
 	margin: 0;
 }
 
-.ecw-wordinfo {
+.fio-crossword .fio-wordinfo {
 	font-size: 8pt;
 	color: #808080;
 }
 
-.ecw-worderror {
+.fio-crossword .fio-worderror {
 	color: #c00000;
 	font-weight: bold;
 	display: none;
 	margin-top: 1em;
+}
+
+@media (min-width: 992px) {
+	.fio-crossword .fio-box {
+		font-size: var(--crossword-square-font-size);
+		line-height: var(--crossword-square-line-height);
+		height: var(--crossword-square);
+		width: var(--crossword-square);
+	}
 }

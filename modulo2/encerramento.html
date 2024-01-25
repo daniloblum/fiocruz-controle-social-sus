@@ -241,399 +241,349 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8">
-									<div id="waitmessage" class="ecw-answerbox">Este jogo de palavras cruzadas interativo requer JavaScript e qualquer navegador recente, incluindo Windows Internet Explorer, Mozilla Firefox, Google Chrome ou Apple Safari. Se você desativou o script da página da web, reative-o e atualize a página. Se esta página da web estiver salva no seu computador, pode ser necessário clicar na barra de informações amarela na parte superior ou inferior da página para permitir o carregamento do quebra-cabeça.</div>
-
-									<table cellpadding="0" cellspacing="0" style="border: 0">
-										<tr>
-											<td class="ecw-crosswordarea">
-												<script type="text/javascript">
-													//<!--
-													CrosswordWidth = 24;
-													CrosswordHeight = 24;
-													Words = 8;
-													WordLength = new Array(11, 11, 6, 23, 19, 24, 13, 13);
-													Word = new Array('SISTEMÁTICO', 'INDICADORES', 'INSUMO', 'PLANEJAMENTO ASCENDENTE', 'PARTICIPAÇÃO SOCIAL', 'INTERVENÇÃO PROGRAMÁTICA', 'MODELO LÓGICO', 'INTEGRALIDADE');
-													Clue = new Array('7. Que se refere a um sistema, ao modo ou método de formar um todo organizado.', '1. Informações, preferencialmente numéricas, que representam determinado fenômeno.', '2. Cada um dos materiais fundamentais para o desenvolvimento ou produção de algo é uma representação visual da estrutura lógica de uma intervenção.', '4. Caráter integrado das atividades de planejamento no SUS que valoriza autonomia.', '5. Participação das comunidades no contexto da saúde.', '8. Ação que expressa por escrito um plano de atividades para alcançar um objetivo.', '3. É uma representação visual da estrutura lógica de uma intervenção.', '6. Um dos princípios do SUS.');
-													AnswerHash = new Array(39980, 43677, 66444, 53457, 57848, 72645, 18967, 89876);
-													WordX = new Array(0, 6, 2, 1, 2, 7, 12, 20);
-													WordY = new Array(2, 7, 10, 17, 22, 0, 5, 5);
-													LastHorizontalWord = 4;
-													OnlyCheckOnce = false;
-													//-->
-												</script>
-
-												<script type="text/javascript">
-													//<!--
-
-													// EclipseCrossword (C) Copyright 2000-2013 Green Eclipse.
-													// The puzzle itself remains the property of its creator. Do not remove this copyright notice.
-
-													var BadChars = '`~!@^*()_={[}]\\|:;"\',<>/?';
-
-													var TableAcrossWord, TableDownWord;
-													var CurrentWord, PrevWordHorizontal, x, y, i, j;
-													var CrosswordFinished, Initialized;
-
-													// Check the user's browser and then initialize the puzzle.
-													if (document.getElementById('waitmessage') != null) {
-														document.getElementById('waitmessage').innerHTML = 'Aguarde enquanto a palavra cruzada é carregada...';
-
-														// Current game variables
-														CurrentWord = -1;
-														PrevWordHorizontal = false;
-
-														// Create the cell-to-word arrays.
-														TableAcrossWord = new Array(CrosswordWidth);
-														for (var x = 0; x < CrosswordWidth; x++) TableAcrossWord[x] = new Array(CrosswordHeight);
-														TableDownWord = new Array(CrosswordWidth);
-														for (var x = 0; x < CrosswordWidth; x++) TableDownWord[x] = new Array(CrosswordHeight);
-														for (var y = 0; y < CrosswordHeight; y++)
-															for (var x = 0; x < CrosswordWidth; x++) {
-																TableAcrossWord[x][y] = -1;
-																TableDownWord[x][y] = -1;
+									<div class="fio-crossword">
+										<div id="waitmessage" class="fio-answerbox">Este jogo de palavras cruzadas interativo requer JavaScript e qualquer navegador recente, incluindo Windows Internet Explorer, Mozilla Firefox, Google Chrome ou Apple Safari. Se você desativou o script da página da web, reative-o e atualize a página. Se esta página da web estiver salva no seu computador, pode ser necessário clicar na barra de informações amarela na parte superior ou inferior da página para permitir o carregamento do quebra-cabeça.</div>
+										<table cellpadding="0" cellspacing="0" style="border: 0">
+											<tr>
+												<td class="fio-crosswordarea">
+													<script type="text/javascript">
+														//<!--
+														CrosswordWidth = 24;
+														CrosswordHeight = 24;
+														Words = 8;
+														WordLength = new Array(11, 11, 6, 23, 19, 24, 13, 13);
+														Word = new Array('SISTEMÁTICO', 'INDICADORES', 'INSUMO', 'PLANEJAMENTO ASCENDENTE', 'PARTICIPAÇÃO SOCIAL', 'INTERVENÇÃO PROGRAMÁTICA', 'MODELO LÓGICO', 'INTEGRALIDADE');
+														Clue = new Array('7. Que se refere a um sistema, ao modo ou método de formar um todo organizado.', '1. Informações, preferencialmente numéricas, que representam determinado fenômeno.', '2. Cada um dos materiais fundamentais para o desenvolvimento ou produção de algo é uma representação visual da estrutura lógica de uma intervenção.', '4. Caráter integrado das atividades de planejamento no SUS que valoriza autonomia.', '5. Participação das comunidades no contexto da saúde.', '8. Ação que expressa por escrito um plano de atividades para alcançar um objetivo.', '3. É uma representação visual da estrutura lógica de uma intervenção.', '6. Um dos princípios do SUS.');
+														AnswerHash = new Array(39980, 43677, 66444, 53457, 57848, 72645, 18967, 89876);
+														WordX = new Array(0, 6, 2, 1, 2, 7, 12, 20);
+														WordY = new Array(2, 7, 10, 17, 22, 0, 5, 5);
+														LastHorizontalWord = 4;
+														OnlyCheckOnce = false;
+														//-->
+													</script>
+													<script type="text/javascript">
+														//<!--
+														// EclipseCrossword (C) Copyright 2000-2013 Green Eclipse.
+														// The puzzle itself remains the property of its creator. Do not remove this copyright notice.
+														var BadChars = '`~!@^*()_={[}]\|:;"\',<>/?';
+														var TableAcrossWord, TableDownWord;
+														var CurrentWord, PrevWordHorizontal, x, y, i, j;
+														var CrosswordFinished, Initialized;
+														// Check the user's browser and then initialize the puzzle.
+														if (document.getElementById('waitmessage') != null) {
+															document.getElementById('waitmessage').innerHTML = 'Aguarde enquanto a palavra cruzada é carregada...';
+															// Current game variables
+															CurrentWord = -1;
+															PrevWordHorizontal = false;
+															// Create the cell-to-word arrays.
+															TableAcrossWord = new Array(CrosswordWidth);
+															for (var x = 0; x < CrosswordWidth; x++) TableAcrossWord[x] = new Array(CrosswordHeight);
+															TableDownWord = new Array(CrosswordWidth);
+															for (var x = 0; x < CrosswordWidth; x++) TableDownWord[x] = new Array(CrosswordHeight);
+															for (var y = 0; y < CrosswordHeight; y++)
+																for (var x = 0; x < CrosswordWidth; x++) {
+																	TableAcrossWord[x][y] = -1;
+																	TableDownWord[x][y] = -1;
+																}
+															// First, add the horizontal words to the puzzle.
+															for (var i = 0; i <= LastHorizontalWord; i++) {
+																x = WordX[i];
+																y = WordY[i];
+																for (var j = 0; j < WordLength[i]; j++) {
+																	TableAcrossWord[x + j][y] = i;
+																}
 															}
-
-														// First, add the horizontal words to the puzzle.
-														for (var i = 0; i <= LastHorizontalWord; i++) {
-															x = WordX[i];
-															y = WordY[i];
-															for (var j = 0; j < WordLength[i]; j++) {
-																TableAcrossWord[x + j][y] = i;
+															// Second, add the vertical words to the puzzle.
+															for (var i = LastHorizontalWord + 1; i < Words; i++) {
+																x = WordX[i];
+																y = WordY[i];
+																for (var j = 0; j < WordLength[i]; j++) {
+																	TableDownWord[x][y + j] = i;
+																}
 															}
-														}
-
-														// Second, add the vertical words to the puzzle.
-														for (var i = LastHorizontalWord + 1; i < Words; i++) {
-															x = WordX[i];
-															y = WordY[i];
-															for (var j = 0; j < WordLength[i]; j++) {
-																TableDownWord[x][y + j] = i;
+															// Now, insert the crossword table.
+															document.writeln('<table id="crossword" cellpadding="0" cellspacing="0" style="display: none; border-collapse: collapse;">');
+															for (var y = 0; y < CrosswordHeight; y++) {
+																document.writeln('<tr>');
+																for (var x = 0; x < CrosswordWidth; x++) {
+																	if (TableAcrossWord[x][y] >= 0 || TableDownWord[x][y] >= 0) document.write('<td id="c' + PadNumber(x) + PadNumber(y) + '" class="fio-box fio-boxnormal_unsel" onclick="SelectThisWord(event);">&nbsp;</td>');
+																	else document.write('<td></td>');
+																}
+																document.writeln('</tr>');
 															}
+															document.writeln('</table>');
+															// Finally, show the crossword and hide the wait message.
+															Initialized = true;
+															document.getElementById('waitmessage').style.display = 'none';
+															document.getElementById('crossword').style.display = 'block';
 														}
-
-														// Now, insert the crossword table.
-														document.writeln('<table id="crossword" cellpadding="0" cellspacing="0" style="display: none; border-collapse: collapse;">');
-														for (var y = 0; y < CrosswordHeight; y++) {
-															document.writeln('<tr>');
-															for (var x = 0; x < CrosswordWidth; x++) {
-																if (TableAcrossWord[x][y] >= 0 || TableDownWord[x][y] >= 0) document.write('<td id="c' + PadNumber(x) + PadNumber(y) + '" class="ecw-box ecw-boxnormal_unsel" onclick="SelectThisWord(event);">&nbsp;</td>');
-																else document.write('<td></td>');
-															}
-															document.writeln('</tr>');
+														// * * * * * * * * * *
+														// Event handlers
+														// Raised when a key is pressed in the word entry box.
+														function WordEntryKeyPress(event) {
+															if (CrosswordFinished) return;
+															// Treat an Enter keypress as an OK click.
+															if (CurrentWord >= 0 && event.keyCode == 13) OKClick();
 														}
-														document.writeln('</table>');
-
-														// Finally, show the crossword and hide the wait message.
-														Initialized = true;
-														document.getElementById('waitmessage').style.display = 'none';
-														document.getElementById('crossword').style.display = 'block';
-													}
-
-													// * * * * * * * * * *
-													// Event handlers
-
-													// Raised when a key is pressed in the word entry box.
-													function WordEntryKeyPress(event) {
-														if (CrosswordFinished) return;
-														// Treat an Enter keypress as an OK click.
-														if (CurrentWord >= 0 && event.keyCode == 13) OKClick();
-													}
-
-													// * * * * * * * * * *
-													// Helper functions
-
-													// Called when we're ready to start the crossword.
-													function BeginCrossword() {
-														if (Initialized) {
-															document.getElementById('welcomemessage').style.display = '';
-															document.getElementById('checkbutton').style.display = '';
-														}
-													}
-
-													// Returns true if the string passed in contains any characters prone to evil.
-													function ContainsBadChars(theirWord) {
-														for (var i = 0; i < theirWord.length; i++) if (BadChars.indexOf(theirWord.charAt(i)) >= 0) return true;
-														return false;
-													}
-
-													// Pads a number out to three characters.
-													function PadNumber(number) {
-														if (number < 10) return '00' + number;
-														else if (number < 100) return '0' + number;
-														else return '' + number;
-													}
-
-													// Returns the table cell at a particular pair of coordinates.
-													function CellAt(x, y) {
-														return document.getElementById('c' + PadNumber(x) + PadNumber(y));
-													}
-
-													// Deselects the current word, if there's a word selected.  DOES not change the value of CurrentWord.
-													function DeselectCurrentWord() {
-														if (CurrentWord < 0) return;
-														var x, y, i;
-
-														document.getElementById('answerbox').style.display = 'none';
-														ChangeCurrentWordSelectedStyle(false);
-														CurrentWord = -1;
-													}
-
-													// Changes the style of the cells in the current word.
-													function ChangeWordStyle(WordNumber, NewStyle) {
-														if (WordNumber < 0) return;
-														var x = WordX[WordNumber];
-														var y = WordY[WordNumber];
-
-														if (WordNumber <= LastHorizontalWord) for (i = 0; i < WordLength[WordNumber]; i++) CellAt(x + i, y).className = NewStyle;
-														else for (i = 0; i < WordLength[WordNumber]; i++) CellAt(x, y + i).className = NewStyle;
-													}
-
-													// Changes the style of the cells in the current word between the selected/unselected form.
-													function ChangeCurrentWordSelectedStyle(IsSelected) {
-														if (CurrentWord < 0) return;
-														var x = WordX[CurrentWord];
-														var y = WordY[CurrentWord];
-
-														if (CurrentWord <= LastHorizontalWord) for (i = 0; i < WordLength[CurrentWord]; i++) CellAt(x + i, y).className = CellAt(x + i, y).className.replace(IsSelected ? '_unsel' : '_sel', IsSelected ? '_sel' : '_unsel');
-														else for (i = 0; i < WordLength[CurrentWord]; i++) CellAt(x, y + i).className = CellAt(x, y + i).className.replace(IsSelected ? '_unsel' : '_sel', IsSelected ? '_sel' : '_unsel');
-													}
-
-													// Selects the new word by parsing the name of the TD element referenced by the
-													// event object, and then applying styles as necessary.
-													function SelectThisWord(event) {
-														if (CrosswordFinished) return;
-														var x, y, i, TheirWord, TableCell;
-
-														// Deselect the previous word if one was selected.
-														document.getElementById('welcomemessage').style.display = 'none';
-														if (CurrentWord >= 0) OKClick();
-														DeselectCurrentWord();
-
-														// Determine the coordinates of the cell they clicked, and then the word that
-														// they clicked.
-														var target = event.srcElement ? event.srcElement : event.target;
-														x = parseInt(target.id.substring(1, 4), 10);
-														y = parseInt(target.id.substring(4, 7), 10);
-
-														// If they clicked an intersection, choose the type of word that was NOT selected last time.
-														if (TableAcrossWord[x][y] >= 0 && TableDownWord[x][y] >= 0) CurrentWord = PrevWordHorizontal ? TableDownWord[x][y] : TableAcrossWord[x][y];
-														else if (TableAcrossWord[x][y] >= 0) CurrentWord = TableAcrossWord[x][y];
-														else if (TableDownWord[x][y] >= 0) CurrentWord = TableDownWord[x][y];
-
-														PrevWordHorizontal = CurrentWord <= LastHorizontalWord;
-
-														// Now, change the style of the cells in this word.
-														ChangeCurrentWordSelectedStyle(true);
-
-														// Then, prepare the answer box.
-														x = WordX[CurrentWord];
-														y = WordY[CurrentWord];
-														TheirWord = '';
-														var TheirWordLength = 0;
-														for (i = 0; i < WordLength[CurrentWord]; i++) {
-															// Find the appropriate table cell.
-															if (CurrentWord <= LastHorizontalWord) TableCell = CellAt(x + i, y);
-															else TableCell = CellAt(x, y + i);
-															// Add its contents to the word we're building.
-															if (TableCell.innerHTML != null && TableCell.innerHTML.length > 0 && TableCell.innerHTML != ' ' && TableCell.innerHTML.toLowerCase() != '&nbsp;') {
-																TheirWord += TableCell.innerHTML.toUpperCase();
-																TheirWordLength++;
-															} else {
-																TheirWord += '&bull;';
+														// * * * * * * * * * *
+														// Helper functions
+														// Called when we're ready to start the crossword.
+														function BeginCrossword() {
+															if (Initialized) {
+																document.getElementById('welcomemessage').style.display = '';
+																document.getElementById('checkbutton').style.display = '';
 															}
 														}
-
-														document.getElementById('wordlabel').innerHTML = TheirWord;
-														document.getElementById('wordinfo').innerHTML = (CurrentWord <= LastHorizontalWord ? 'Horizontal, ' : 'Vertical, ') + WordLength[CurrentWord] + ' letras.';
-														document.getElementById('wordclue').innerHTML = Clue[CurrentWord];
-														document.getElementById('worderror').style.display = 'none';
-														document.getElementById('cheatbutton').style.display = Word.length == 0 ? 'none' : '';
-														if (TheirWordLength == WordLength[CurrentWord]) document.getElementById('wordentry').value = TheirWord.replace(/&AMP;/g, '&');
-														else document.getElementById('wordentry').value = '';
-
-														// Finally, show the answer box.
-														document.getElementById('answerbox').style.display = 'block';
-														try {
-															document.getElementById('wordentry').focus();
-															document.getElementById('wordentry').select();
-														} catch (e) {}
-													}
-
-													// Called when the user clicks the OK link.
-													function OKClick() {
-														var TheirWord, x, y, i, TableCell;
-														if (CrosswordFinished) return;
-														if (document.getElementById('okbutton').disabled) return;
-
-														// First, validate the entry.
-														TheirWord = document.getElementById('wordentry').value.toUpperCase();
-														if (TheirWord.length == 0) {
+														// Returns true if the string passed in contains any characters prone to evil.
+														function ContainsBadChars(theirWord) {
+															for (var i = 0; i < theirWord.length; i++) if (BadChars.indexOf(theirWord.charAt(i)) >= 0) return true;
+															return false;
+														}
+														// Pads a number out to three characters.
+														function PadNumber(number) {
+															if (number < 10) return '00' + number;
+															else if (number < 100) return '0' + number;
+															else return '' + number;
+														}
+														// Returns the table cell at a particular pair of coordinates.
+														function CellAt(x, y) {
+															return document.getElementById('c' + PadNumber(x) + PadNumber(y));
+														}
+														// Deselects the current word, if there's a word selected.  DOES not change the value of CurrentWord.
+														function DeselectCurrentWord() {
+															if (CurrentWord < 0) return;
+															var x, y, i;
+															document.getElementById('answerbox').style.display = 'none';
+															ChangeCurrentWordSelectedStyle(false);
+															CurrentWord = -1;
+														}
+														// Changes the style of the cells in the current word.
+														function ChangeWordStyle(WordNumber, NewStyle) {
+															if (WordNumber < 0) return;
+															var x = WordX[WordNumber];
+															var y = WordY[WordNumber];
+															if (WordNumber <= LastHorizontalWord) for (i = 0; i < WordLength[WordNumber]; i++) CellAt(x + i, y).className = NewStyle;
+															else for (i = 0; i < WordLength[WordNumber]; i++) CellAt(x, y + i).className = NewStyle;
+														}
+														// Changes the style of the cells in the current word between the selected/unselected form.
+														function ChangeCurrentWordSelectedStyle(IsSelected) {
+															if (CurrentWord < 0) return;
+															var x = WordX[CurrentWord];
+															var y = WordY[CurrentWord];
+															if (CurrentWord <= LastHorizontalWord) for (i = 0; i < WordLength[CurrentWord]; i++) CellAt(x + i, y).className = CellAt(x + i, y).className.replace(IsSelected ? '_unsel' : '_sel', IsSelected ? '_sel' : '_unsel');
+															else for (i = 0; i < WordLength[CurrentWord]; i++) CellAt(x, y + i).className = CellAt(x, y + i).className.replace(IsSelected ? '_unsel' : '_sel', IsSelected ? '_sel' : '_unsel');
+														}
+														// Selects the new word by parsing the name of the TD element referenced by the
+														// event object, and then applying styles as necessary.
+														function SelectThisWord(event) {
+															if (CrosswordFinished) return;
+															var x, y, i, TheirWord, TableCell;
+															// Deselect the previous word if one was selected.
+															document.getElementById('welcomemessage').style.display = 'none';
+															if (CurrentWord >= 0) OKClick();
 															DeselectCurrentWord();
-															return;
-														}
-														if (ContainsBadChars(TheirWord)) {
-															document.getElementById('worderror').innerHTML = 'A palavra que você digitou contém caracteres inválidos. Por favor digite apenas letras na caixa acima.';
-															document.getElementById('worderror').style.display = 'block';
-															return;
-														}
-														if (TheirWord.length < WordLength[CurrentWord]) {
-															document.getElementById('worderror').innerHTML = 'Você não digitou letras suficientes. Esta palavra tem ' + WordLength[CurrentWord] + ' letras.';
-															document.getElementById('worderror').style.display = 'block';
-															return;
-														}
-														if (TheirWord.length > WordLength[CurrentWord]) {
-															document.getElementById('worderror').innerHTML = 'Você digitou muitas letras. Esta palavra tem ' + WordLength[CurrentWord] + ' letras.';
-															document.getElementById('worderror').style.display = 'block';
-															return;
-														}
-
-														// If we made it this far, they typed an acceptable word, so add these letters to the puzzle and hide the entry box.
-														x = WordX[CurrentWord];
-														y = WordY[CurrentWord];
-														for (i = 0; i < TheirWord.length; i++) {
-															TableCell = CellAt(x + (CurrentWord <= LastHorizontalWord ? i : 0), y + (CurrentWord > LastHorizontalWord ? i : 0));
-															TableCell.innerHTML = TheirWord.substring(i, i + 1);
-														}
-														DeselectCurrentWord();
-													}
-
-													// Called when the "check puzzle" link is clicked.
-													function CheckClick() {
-														var i,
-															j,
-															x,
-															y,
-															UserEntry,
-															ErrorsFound = 0,
-															EmptyFound = 0,
-															TableCell;
-														if (CrosswordFinished) return;
-														DeselectCurrentWord();
-
-														for (y = 0; y < CrosswordHeight; y++)
-															for (x = 0; x < CrosswordWidth; x++)
-																if (TableAcrossWord[x][y] >= 0 || TableDownWord[x][y] >= 0) {
-																	TableCell = CellAt(x, y);
-																	if (TableCell.className == 'ecw-box ecw-boxerror_unsel') TableCell.className = 'ecw-box ecw-boxnormal_unsel';
-																}
-
-														for (i = 0; i < Words; i++) {
-															// Get the user's entry for this word.
-															UserEntry = '';
-															for (j = 0; j < WordLength[i]; j++) {
-																if (i <= LastHorizontalWord) TableCell = CellAt(WordX[i] + j, WordY[i]);
-																else TableCell = CellAt(WordX[i], WordY[i] + j);
-																if (TableCell.innerHTML.length > 0 && TableCell.innerHTML.toLowerCase() != '&nbsp;') {
-																	UserEntry += TableCell.innerHTML.toUpperCase();
+															// Determine the coordinates of the cell they clicked, and then the word that
+															// they clicked.
+															var target = event.srcElement ? event.srcElement : event.target;
+															x = parseInt(target.id.substring(1, 4), 10);
+															y = parseInt(target.id.substring(4, 7), 10);
+															// If they clicked an intersection, choose the type of word that was NOT selected last time.
+															if (TableAcrossWord[x][y] >= 0 && TableDownWord[x][y] >= 0) CurrentWord = PrevWordHorizontal ? TableDownWord[x][y] : TableAcrossWord[x][y];
+															else if (TableAcrossWord[x][y] >= 0) CurrentWord = TableAcrossWord[x][y];
+															else if (TableDownWord[x][y] >= 0) CurrentWord = TableDownWord[x][y];
+															PrevWordHorizontal = CurrentWord <= LastHorizontalWord;
+															// Now, change the style of the cells in this word.
+															ChangeCurrentWordSelectedStyle(true);
+															// Then, prepare the answer box.
+															x = WordX[CurrentWord];
+															y = WordY[CurrentWord];
+															TheirWord = '';
+															var TheirWordLength = 0;
+															for (i = 0; i < WordLength[CurrentWord]; i++) {
+																// Find the appropriate table cell.
+																if (CurrentWord <= LastHorizontalWord) TableCell = CellAt(x + i, y);
+																else TableCell = CellAt(x, y + i);
+																// Add its contents to the word we're building.
+																if (TableCell.innerHTML != null && TableCell.innerHTML.length > 0 && TableCell.innerHTML != ' ' && TableCell.innerHTML.toLowerCase() != '&nbsp;') {
+																	TheirWord += TableCell.innerHTML.toUpperCase();
+																	TheirWordLength++;
 																} else {
-																	UserEntry = '';
-																	EmptyFound++;
-																	break;
+																	TheirWord += '&bull;';
 																}
 															}
-															UserEntry = UserEntry.replace(/&AMP;/g, '&');
-															// If this word doesn't match, it's an error.
-															if (HashWord(UserEntry) != AnswerHash[i] && UserEntry.length > 0) {
-																ErrorsFound++;
-																ChangeWordStyle(i, 'ecw-box ecw-boxerror_unsel');
-															}
+															document.getElementById('wordlabel').innerHTML = TheirWord;
+															document.getElementById('wordinfo').innerHTML = (CurrentWord <= LastHorizontalWord ? 'Horizontal, ' : 'Vertical, ') + WordLength[CurrentWord] + ' letras.';
+															document.getElementById('wordclue').innerHTML = Clue[CurrentWord];
+															document.getElementById('worderror').style.display = 'none';
+															document.getElementById('cheatbutton').style.display = Word.length == 0 ? 'none' : '';
+															if (TheirWordLength == WordLength[CurrentWord]) document.getElementById('wordentry').value = TheirWord.replace(/&AMP;/g, '&');
+															else document.getElementById('wordentry').value = '';
+															// Finally, show the answer box.
+															document.getElementById('answerbox').style.display = 'block';
+															try {
+																document.getElementById('wordentry').focus();
+																document.getElementById('wordentry').select();
+															} catch (e) {}
 														}
-
-														// If they can only check once, disable things prematurely.
-														if (OnlyCheckOnce) {
+														// Called when the user clicks the OK link.
+														function OKClick() {
+															var TheirWord, x, y, i, TableCell;
+															if (CrosswordFinished) return;
+															if (document.getElementById('okbutton').disabled) return;
+															// First, validate the entry.
+															TheirWord = document.getElementById('wordentry').value.toUpperCase();
+															if (TheirWord.length == 0) {
+																DeselectCurrentWord();
+																return;
+															}
+															if (ContainsBadChars(TheirWord)) {
+																document.getElementById('worderror').innerHTML = 'A palavra que você digitou contém caracteres inválidos. Por favor digite apenas letras na caixa acima.';
+																document.getElementById('worderror').style.display = 'block';
+																return;
+															}
+															if (TheirWord.length < WordLength[CurrentWord]) {
+																document.getElementById('worderror').innerHTML = 'Você não digitou letras suficientes. Esta palavra tem ' + WordLength[CurrentWord] + ' letras.';
+																document.getElementById('worderror').style.display = 'block';
+																return;
+															}
+															if (TheirWord.length > WordLength[CurrentWord]) {
+																document.getElementById('worderror').innerHTML = 'Você digitou muitas letras. Esta palavra tem ' + WordLength[CurrentWord] + ' letras.';
+																document.getElementById('worderror').style.display = 'block';
+																return;
+															}
+															// If we made it this far, they typed an acceptable word, so add these letters to the puzzle and hide the entry box.
+															x = WordX[CurrentWord];
+															y = WordY[CurrentWord];
+															for (i = 0; i < TheirWord.length; i++) {
+																TableCell = CellAt(x + (CurrentWord <= LastHorizontalWord ? i : 0), y + (CurrentWord > LastHorizontalWord ? i : 0));
+																TableCell.innerHTML = TheirWord.substring(i, i + 1);
+															}
+															DeselectCurrentWord();
+														}
+														// Called when the "check puzzle" link is clicked.
+														function CheckClick() {
+															var i,
+																j,
+																x,
+																y,
+																UserEntry,
+																ErrorsFound = 0,
+																EmptyFound = 0,
+																TableCell;
+															if (CrosswordFinished) return;
+															DeselectCurrentWord();
+															for (y = 0; y < CrosswordHeight; y++)
+																for (x = 0; x < CrosswordWidth; x++)
+																	if (TableAcrossWord[x][y] >= 0 || TableDownWord[x][y] >= 0) {
+																		TableCell = CellAt(x, y);
+																		if (TableCell.className == 'fio-box fio-boxerror_unsel') TableCell.className = 'fio-box fio-boxnormal_unsel';
+																	}
+															for (i = 0; i < Words; i++) {
+																// Get the user's entry for this word.
+																UserEntry = '';
+																for (j = 0; j < WordLength[i]; j++) {
+																	if (i <= LastHorizontalWord) TableCell = CellAt(WordX[i] + j, WordY[i]);
+																	else TableCell = CellAt(WordX[i], WordY[i] + j);
+																	if (TableCell.innerHTML.length > 0 && TableCell.innerHTML.toLowerCase() != '&nbsp;') {
+																		UserEntry += TableCell.innerHTML.toUpperCase();
+																	} else {
+																		UserEntry = '';
+																		EmptyFound++;
+																		break;
+																	}
+																}
+																UserEntry = UserEntry.replace(/&AMP;/g, '&');
+																// If this word doesn't match, it's an error.
+																if (HashWord(UserEntry) != AnswerHash[i] && UserEntry.length > 0) {
+																	ErrorsFound++;
+																	ChangeWordStyle(i, 'fio-box fio-boxerror_unsel');
+																}
+															}
+															// If they can only check once, disable things prematurely.
+															if (OnlyCheckOnce) {
+																CrosswordFinished = true;
+																document.getElementById('checkbutton').style.display = 'none';
+															}
+															// If errors were found, just exit now.
+															if (ErrorsFound > 0 && EmptyFound > 0) document.getElementById('welcomemessage').innerHTML = ErrorsFound + (ErrorsFound > 1 ? ' erros' : ' erro') + ' e ' + EmptyFound + (EmptyFound > 1 ? ' palavras incompletas foram encontradas.' : ' palavra incompleta foi encontrada.');
+															else if (ErrorsFound > 0) document.getElementById('welcomemessage').innerHTML = ErrorsFound + (ErrorsFound > 1 ? ' erros foram encontrados.' : ' erro foi encontrado.');
+															else if (EmptyFound > 0) document.getElementById('welcomemessage').innerHTML = 'Nenhum erro foi encontrado, mas ' + EmptyFound + (EmptyFound > 1 ? ' palavras incompletas foram encontradas.' : ' palavra incompleta foi encontrada.');
+															if (ErrorsFound + EmptyFound > 0) {
+																document.getElementById('welcomemessage').style.display = '';
+																return;
+															}
+															// They finished the puzzle!
 															CrosswordFinished = true;
 															document.getElementById('checkbutton').style.display = 'none';
+															document.getElementById('congratulations').style.display = 'block';
+															document.getElementById('welcomemessage').style.display = 'none';
 														}
-
-														// If errors were found, just exit now.
-														if (ErrorsFound > 0 && EmptyFound > 0) document.getElementById('welcomemessage').innerHTML = ErrorsFound + (ErrorsFound > 1 ? ' erros' : ' erro') + ' e ' + EmptyFound + (EmptyFound > 1 ? ' palavras incompletas foram encontradas.' : ' palavra incompleta foi encontrada.');
-														else if (ErrorsFound > 0) document.getElementById('welcomemessage').innerHTML = ErrorsFound + (ErrorsFound > 1 ? ' erros foram encontrados.' : ' erro foi encontrado.');
-														else if (EmptyFound > 0) document.getElementById('welcomemessage').innerHTML = 'Nenhum erro foi encontrado, mas ' + EmptyFound + (EmptyFound > 1 ? ' palavras incompletas foram encontradas.' : ' palavra incompleta foi encontrada.');
-
-														if (ErrorsFound + EmptyFound > 0) {
-															document.getElementById('welcomemessage').style.display = '';
-															return;
+														// Called when the "cheat" link is clicked.
+														function CheatClick() {
+															if (CrosswordFinished) return;
+															var OldWord = CurrentWord;
+															document.getElementById('wordentry').value = Word[CurrentWord];
+															OKClick();
+															ChangeWordStyle(OldWord, 'fio-box fio-boxcheated_unsel');
 														}
-
-														// They finished the puzzle!
-														CrosswordFinished = true;
-														document.getElementById('checkbutton').style.display = 'none';
-														document.getElementById('congratulations').style.display = 'block';
-														document.getElementById('welcomemessage').style.display = 'none';
-													}
-
-													// Called when the "cheat" link is clicked.
-													function CheatClick() {
-														if (CrosswordFinished) return;
-														var OldWord = CurrentWord;
-														document.getElementById('wordentry').value = Word[CurrentWord];
-														OKClick();
-														ChangeWordStyle(OldWord, 'ecw-box ecw-boxcheated_unsel');
-													}
-
-													// Returns a one-way hash for a word.
-													function HashWord(Word) {
-														var x = (Word.charCodeAt(0) * 719) % 1138;
-														var Hash = 837;
-														var i;
-														for (i = 1; i <= Word.length; i++) Hash = (Hash * i + 5 + (Word.charCodeAt(i - 1) - 64) * x) % 98503;
-														return Hash;
-													}
-
-													//-->
-												</script>
-											</td>
-										</tr>
-										<tr>
-											<td valign="top">
-												<div class="card mt-5">
-													<div id="welcomemessage" class="ecw-answerbox" style="display: none">
-														<h5>Bem vindo!</h5>
-														<p>Selecione uma palavra na cruzadinha para iniciar.</p>
-													</div>
-													<div id="answerbox" class="ecw-answerbox" style="display: none">
-														<h5 id="wordlabel" class="ecw-wordlabel">&nbsp;</h5>
-														<div id="wordinfo" class="ecw-wordinfo"></div>
-														<div id="wordclue" class="ecw-cluebox"></div>
-														<div style="margin-top: 1em">
-															<input class="ecw-input" id="wordentry" type="text" size="24" style="font-weight: bold; text-transform: uppercase" onkeypress="WordEntryKeyPress(event)" onchange="WordEntryKeyPress(event)" />
+														// Returns a one-way hash for a word.
+														function HashWord(Word) {
+															var x = (Word.charCodeAt(0) * 719) % 1138;
+															var Hash = 837;
+															var i;
+															for (i = 1; i <= Word.length; i++) Hash = (Hash * i + 5 + (Word.charCodeAt(i - 1) - 64) * x) % 98503;
+															return Hash;
+														}
+														//-->
+													</script>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<div class="card mt-5">
+														<div id="welcomemessage" class="fio-answerbox" style="display: none">
+															<h5>Bem vindo!</h5>
+															<p>Selecione uma palavra na cruzadinha para iniciar.</p>
 														</div>
-														<div id="worderror" class="ecw-worderror"></div>
-														<table cellspacing="0" cellpadding="0" width="100%" style="margin-top: 1em; border: 0">
-															<tbody>
-																<tr>
-																	<td style="text-align: left">
-																		<button id="okbutton" type="button" class="fio-button fio-button-primary" onclick="OKClick();">Inserir</button> &nbsp;
-																		<button id="cancelbutton" type="button" class="fio-button fio-button-primary" onclick="DeselectCurrentWord();">Cancelar</button>
-																	</td>
-																	<td style="text-align: right">
-																		<button id="cheatbutton" type="button" class="fio-button fio-button-outline-primary" onclick="CheatClick();">Resolver</button>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
+														<div id="answerbox" class="fio-answerbox" style="display: none">
+															<h5 id="wordlabel" class="fio-wordlabel">&nbsp;</h5>
+															<div id="wordinfo" class="fio-wordinfo"></div>
+															<div id="wordclue" class="fio-cluebox"></div>
+															<div style="margin-top: 1em">
+																<input class="fio-input" id="wordentry" type="text" size="24" style="font-weight: bold; text-transform: uppercase" onkeypress="WordEntryKeyPress(event)" onchange="WordEntryKeyPress(event)" />
+															</div>
+															<div id="worderror" class="fio-worderror"></div>
+															<table cellspacing="0" cellpadding="0" width="100%" style="margin-top: 1em; border: 0">
+																<tbody>
+																	<tr>
+																		<td style="text-align: left">
+																			<button id="okbutton" type="button" class="fio-button fio-button-primary" onclick="OKClick();">Inserir</button> &nbsp;
+																			<button id="cancelbutton" type="button" class="fio-button fio-button-primary" onclick="DeselectCurrentWord();">Cancelar</button>
+																		</td>
+																		<td style="text-align: right">
+																			<button id="cheatbutton" type="button" class="fio-button fio-button-outline-primary" onclick="CheatClick();">Resolver</button>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
 													</div>
-												</div>
-
-												<div id="congratulations" class="ecw-answerbox" style="display: none">
-													<h5>Parabéns!</h5>
-													<p>Você completou esta palvra cruzada!</p>
-												</div>
-											</td>
-										</tr>
-									</table>
-
-									<div style="margin-top: 20px; text-align: center">
-										<button id="checkbutton" type="button" onclick="CheckClick();" class="fio-button fio-button-primary" style="display: none; text-align: center">Conferir</button>
+													<div id="congratulations" class="fio-answerbox" style="display: none">
+														<h5>Parabéns!</h5>
+														<p>Você completou esta palvra cruzada!</p>
+													</div>
+												</td>
+											</tr>
+										</table>
+										<div style="margin-top: 20px; text-align: center">
+											<button id="checkbutton" type="button" onclick="CheckClick();" class="fio-button fio-button-primary" style="display: none; text-align: center">Conferir</button>
+										</div>
+										<script type="text/javascript">
+											//<!--
+											BeginCrossword();
+											//-->
+										</script>
 									</div>
-
-									<script type="text/javascript">
-										//<!--
-										BeginCrossword();
-										//-->
-									</script>
-
-									<!-- Created with EclipseCrossword, (C) Copyright 2000-2013 Green Eclipse.  eclipsecrossword.com -->
 								</div>
 							</div>
 						</div>
@@ -888,9 +838,22 @@
 								</h2>
 								<div id="collapse1-a" class="accordion-collapse collapse" aria-labelledby="heading1-a" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>BUROCRACIA</strong></p>
-										<p>É um princípio de técnica e de organização administrativa, que se compõe a partir de regras e procedimentos preestabelecidos. Instrumentos graças aos quais se executa a vontade da autoridade superior.</p>
-										<p>(<a href="http://www.igf.com.br/aprende/glossario/glo_Resp.aspx?id=459" target="_blank">http://www.igf.com.br/aprende/glossario/glo_Resp.aspx?id=459</a>)</p>
+										<p>
+											<strong>Abordagem qualitativa</strong><br />
+											A pesquisa qualitativa não se preocupa com representatividade numérica, mas, sim, com o aprofundamento da compreensão de um grupo social, de uma organização etc.
+											<a href="https://www.ufrgs.br/cursopgdr/downloadsSerie/derad005.pdf" target="_blank" rel="noopener noreferrer">https://www.ufrgs.br/cursopgdr/downloadsSerie/derad005.pdf</a>
+										</p>
+										<p>
+											<strong>Abordagem quantitativa</strong><br />
+											É objetiva e trabalha com dados, números e estatísticas que fornecem suporte para tirar conclusões gerais da pesquisa. A pesquisa quantitativa se centra na objetividade. Influenciada pelo positivismo, considera que a realidade só pode ser compreendida com base na análise de dados brutos, recolhidos com o auxílio de instrumentos padronizados e neutros.
+											<a href="https://www.ufrgs.br/cursopgdr/downloadsSerie/derad005.pdf" target="_blank" rel="noopener noreferrer">https://www.ufrgs.br/cursopgdr/downloadsSerie/derad005.pdf</a>
+										</p>
+
+										<p>
+											<strong>Análise situacional em saúde</strong><br />
+											Análise situacional de uma determinada área de atuação da Saúde por meio do levantamento e pesquisa de informações estatísticas que permitem ter uma visão do conjunto da população residente, objeto da ação. Descreve a importância do planejamento dessas ações no processo de trabalho das equipes, de forma a subsidiar sua abordagem, facilitando o processo de acolhimento da comunidade pelo profissional da saúde.
+											<a href="https://www.arca.fiocruz.br/handle/icict/15646" target="_blank" rel="noopener noreferrer">https://www.arca.fiocruz.br/handle/icict/15646</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -901,31 +864,16 @@
 								</h2>
 								<div id="collapse1-c" class="accordion-collapse collapse" aria-labelledby="heading1-c" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>COMPLEXIDADE</strong></p>
-										<p>Característica do que é complexo, de difícil compreensão ou entendimento. Qualidade daquilo que possui múltiplos elementos, observável sob diferentes aspectos e confuso, complicado, intricado.</p>
-										<p>(<a href="https://www.revistasg.uff.br/sg/article/view/1157/552" target="_blank">https://www.revistasg.uff.br/sg/article/view/1157/552</a>)</p>
-
-										<p><strong>CONFERÊNCIA DE SAÚDE</strong></p>
-										<p>É um espaço democrático previsto na Lei 8.142/90. Deve ser realizada a cada quatro anos com a representação dos vários segmentos sociais, para avaliar a situação de saúde e propor as diretrizes para a formulação da política de saúde em cada nível de governo. Cabe ao Poder Executivo convocar a Conferência de Saúde, mas na sua omissão cabe extraordinariamente ao Conselho de Saúde sua convocação.</p>
-										<p>(<a href="https://conselho.saude.gov.br/legislacao/lei8142_281290.htm" target="_blank">https://conselho.saude.gov.br/legislacao/lei8142_281290.htm</a>)</p>
-
-										<p><strong>CONSELHO DE SAÚDE</strong></p>
-										<p>É uma instância colegiada, deliberativa e permanente do Sistema Único de Saúde (SUS), integrante da estrutura organizacional do Ministério da Saúde, tendo como missão fiscalizar, acompanhar e monitorar as políticas públicas de saúde nas suas mais diferentes áreas, levando as demandas da população ao poder público, por isso é chamado de controle social na saúde.</p>
 										<p>
-											(<a
-												href="https://conselho.saude.gov.br/apresentacao/apresentacao.htm#:~:text=O%20
-											Conselho%20Nacional%20de%20Sa%C3%BAde,organizacional%20do%20
-											Minist%C3%A9rio%20da%20Sa%C3%BAde"
-												target="_blank"
-												>https://conselho.saude.gov.br/apresentacao/apresentacao.htm#:~:text=O%20 Conselho%20Nacional%20de%20Sa%C3%BAde,organizacional%20do%20 Minist%C3%A9rio%20da%20Sa%C3%BAde</a
-											>)
+											<strong>CENDES-OPAS</strong><br />
+											É um método de programação de recursos de saúde que deixou importantes conceitos sobre custo-benefício das ações em saúde ou, por exemplo, sobre a transcendência social dos agravos à saúde.
+											<a href="https://moodle.unasus.gov.br/vitrine29/pluginfile.php/6044/mod_resource/content/1/ebook/5.html" target="_blank" rel="noopener noreferrer">https://moodle.unasus.gov.br/vitrine29/pluginfile.php/6044/mod_resource/content/1/ebook/5.html</a>
 										</p>
-
-										<p><strong>CONTROLE SOCIAL</strong></p>
-										<p>É a participação da sociedade na administração pública, com objetivo de acompanhar e fiscalizar as ações de Governo, a fim de solucionar os problemas e assegurar a manutenção dos serviços de atendimento ao cidadão, orientando as ações do Estado e os gastos estatais na direção dos interesses da maioria da população.</p>
-										<p>(<a href="https://acessoainformacao.es.gov.br/o-que-e-controle-social" target="_blank">https://acessoainformacao.es.gov.br/o-que-e-controle-social</a>)</p>
-
-										<p>(<a href="https://www.epsjv.fiocruz.br/sites/default/files/l43.pdf" target="_blank">https://www.epsjv.fiocruz.br/sites/default/files/l43.pdf</a>)</p>
+										<p>
+											<strong>Constructo de temáticas</strong><br />
+											Modelo criado mentalmente que, elaborado com base em dados simples e partindo de ações analisáveis, é usado para compreender uma parte específica de um tema.
+											<a href="https://www.dicio.com.br/constructo/" target="_blank" rel="noopener noreferrer">https://www.dicio.com.br/constructo/</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -935,21 +883,21 @@
 								</h2>
 								<div id="collapse1-d" class="accordion-collapse collapse" aria-labelledby="heading1-d" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>DELIBERAÇÃO</strong></p>
-										<p>Ação ou efeito de deliberar, de tomar uma decisão após pensar, analisar e refletir.</p>
-										<p>(<a href="https://www.dicio.com.br/deliberacao" target="_blank">https://www.dicio.com.br/deliberacao/</a>)</p>
-
-										<p><strong>DESIGUALDADE</strong></p>
-										<p>Caráter ou condição do que não é igual: desigualdade de condições. Caráter, estado de coisas ou pessoas que não são iguais entre si; dessemelhança, diferença.</p>
-										<p>(<a href="https://www.dicio.com.br/desigualdade/" target="_blank">https://www.dicio.com.br/desigualdade/</a>)</p>
-
-										<p><strong>DEMOCRACIA</strong></p>
-										<p>É o regime político no qual a soberania é exercida pelo povo. Os cidadãos são os detentores do poder e confiam parte desse poder ao Estado, para organizar a sociedade.</p>
-										<p>(<a href="https://unale.org.br/entenda-o-que-e-democracia-e-como-ela-funciona-no-brasil/" target="_blank">https://unale.org.br/entenda-o-que-e-democracia-e-como-ela-funciona-no-brasil/</a>)</p>
-
-										<p><strong>DIVERSIDADE</strong></p>
-										<p>São as distintas possibilidades de expressão e vivência social das pessoas, dadas por aspectos de orientação sexual, gênero, sexo, faixa etária, raça/cor, etnia, pessoa com deficiência, entre outros.</p>
-										<p>(<a href="https://portal.fiocruz.br/noticia/glossario" target="_blank">https://portal.fiocruz.br/noticia/glossario</a>)</p>
+										<p>
+											<strong>Descentralização</strong><br />
+											A descentralização da gestão e das políticas da saúde no país – feita de forma integrada entre a União, estados e municípios – é um dos princípios organizativos do Sistema Único de Saúde (SUS). De acordo com este princípio, o poder e a responsabilidade sobre o setor são distribuídos entre os três níveis de governo, objetivando uma prestação de serviços com mais eficiência e qualidade e, também, a fiscalização e o controle por parte da sociedade.
+											<a href="https://pensesus.fiocruz.br/descentralizacao" target="_blank" rel="noopener noreferrer">https://pensesus.fiocruz.br/descentralizacao</a>
+										</p>
+										<p>
+											<strong>Determinantes em saúde</strong><br />
+											De acordo com a Lei Orgânica da Saúde, os fatores determinante e condicionantes de saúde são: a alimentação, a moradia, o saneamento básico, o meio ambiente, o trabalho, a renda, a educação, o transporte, o lazer e o acesso aos bens e serviços essenciais para a saúde.
+											<a href="http://www.planalto.gov.br/ccivil_03/leis/l8080.htm" target="_blank" rel="noopener noreferrer">http://www.planalto.gov.br/ccivil_03/leis/l8080.htm</a>
+										</p>
+										<p>
+											<strong>Diretrizes organizacionais</strong><br />
+											É a linha de conduta definida para os caminhos que levam até os objetivos de uma organização. Os princípios e diretrizes do Sistema único de Saúde (SUS) constituem as bases para o funcionamento e organização do sistema de saúde em nosso país. Constituindo-se como um produto resultante de um processo político e que expressa concepções sobre saúde e doença, direitos sociais, gestão, as relações entre as esferas de governo do país, entre outros.
+											<a href="https://www.arca.fiocruz.br/bitstream/handle/icict/39223/Pol%EDticas%20de%20Sa%FAde%20-%20Princ%EDpios%20e%20Diretrizes%20do%20Sistema%20%DAnico%20de%20Sa%FAde.pdf?sequence=2" target="_blank" rel="noopener noreferrer">https://www.arca.fiocruz.br/bitstream/handle/icict/39223/Pol%EDticas%20de%20Sa%FAde%20-%20Princ%EDpios%20e%20Diretrizes%20do%20Sistema%20%DAnico%20de%20Sa%FAde.pdf?sequence=2</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -960,9 +908,29 @@
 								</h2>
 								<div id="collapse1-e" class="accordion-collapse collapse" aria-labelledby="heading1-e" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>EQUIDADE</strong></p>
-										<p>No Sistema Único de Saúde (SUS) a equidade se evidencia no atendimento aos indivíduos de acordo com suas necessidades, oferecendo mais a quem mais precisa e menos a quem requer menos cuidados.</p>
-										<p>(<a href="https://www.unasus.gov.br/noticia/voce-sabe-o-que-e-equidade" target="_blank">https://www.unasus.gov.br/noticia/voce-sabe-o-que-e-equidade</a>)</p>
+										<p>
+											<strong>Eficácia</strong><br />
+											Qualidade daquilo que alcança os resultados planejados; característica do que produz os efeitos esperados, do que é eficaz. Significa realizar com alto padrão de qualidade e no tempo adequado.
+											<a href="https://repositorio.enap.gov.br/bitstream/1/1121/1/Semin%C3%A1rio%20de%20Admiistra%C3%A7%C3%A3o%20Eficaz.pd" target="_blank" rel="noopener noreferrer">https://repositorio.enap.gov.br/bitstream/1/1121/1/Semin%C3%A1rio%20de%20Admiistra%C3%A7%C3%A3o%20Eficaz.pd</a>
+											<a href="https://www.dicio.com.br/eficacias/" target="_blank" rel="noopener noreferrer">https://www.dicio.com.br/eficacias/</a>
+										</p>
+
+										<p>
+											<strong>Eficiência</strong><br />
+											Capacidade de realizar tarefas ou trabalhos de modo eficaz e com o mínimo de desperdício; produtividade. Traduz-se no emprego de esforços (meios) para a obtenção de um máximo de resultados (fins).
+											<a href="http://abdconstojs.com.br/index.php/revista/article/view/3/3" target="_blank" rel="noopener noreferrer">http://abdconstojs.com.br/index.php/revista/article/view/3/3</a>
+										</p>
+
+										<p>
+											<strong>Efetividade</strong><br />
+											A efetividade na área pública, diz respeito à medida de resultados de uma ação que retorna em benefícios para a população. Ela é mais abrangente, pois indica se o objetivo foi atingido. O conceito de efetividade na área pública, define que essa se concentra na qualidade do resultado e na necessidade de certas ações públicas.
+											<a href="http://fait.revista.inf.br/imagens_arquivos/arquivos_destaque/nQNRCydBfojPkZm_2017-1-17-19-18-27.pdf" target="_blank" rel="noopener noreferrer">http://fait.revista.inf.br/imagens_arquivos/arquivos_destaque/nQNRCydBfojPkZm_2017-1-17-19-18-27.pdf</a>
+										</p>
+										<p>
+											<strong>Equidade</strong><br />
+											Em resumo, significa reconhecer que todos precisam de atenção, mas não necessariamente dos mesmos atendimentos. No Sistema Único de Saúde (SUS) a equidade se evidencia no atendimento aos indivíduos de acordo com suas necessidades, oferecendo mais a quem mais precisa e menos a quem requer menos cuidados.
+											<a href="ttps://www.unasus.gov.br/noticia/voce-sabe-o-que-e-equidade" target="_blank" rel="noopener noreferrer">ttps://www.unasus.gov.br/noticia/voce-sabe-o-que-e-equidade</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -972,11 +940,26 @@
 								</h2>
 								<div id="collapse1-g" class="accordion-collapse collapse" aria-labelledby="heading1-g" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>GLOBALIZAÇÃO</strong></p>
-										<p>É o processo de aproximação entre as diversas sociedades e nações existentes por todo o mundo, seja no âmbito econômico, social, cultural ou político. Processo que ocasionou uma integração, ou ligação estreita, entre economias e mercados, em diferentes países, resultando na quebra das fronteiras entre eles.</p>
-										<p>(<a href="https://www.significados.com.br/globalizacao/" target="_blank">https://www.significados.com.br/globalizacao/</a>)</p>
-
-										<p>(<a href="https://www.dicio.com.br/globalizacao/" target="_blank">https://www.dicio.com.br/globalizacao/</a>)</p>
+										<p>
+											<strong>Governabilidade</strong><br />
+											Circunstância que denota estabilidade social, financeira, política e possibilita ao poder executivo exercitar suas funções para governar de forma estável. Refere-se às próprias condições substantivas/materiais de exercício do poder e de legitimidade do Estado e do seu governo derivadas da sua postura diante da sociedade civil e do mercado.
+											<a href="https://www.dicio.com.br/governabilidade/" target="_blank" rel="noopener noreferrer">https://www.dicio.com.br/governabilidade/</a>
+											<a href="https://saude.es.gov.br/Media/sesa/Descentraliza%C3%A7%C3%A3o/Araujo.pdf" target="_blank" rel="noopener noreferrer">https://saude.es.gov.br/Media/sesa/Descentraliza%C3%A7%C3%A3o/Araujo.pdf</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading1-h">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-h" aria-expanded="false" aria-controls="collapse1-h">H</button>
+								</h2>
+								<div id="collapse1-h" class="accordion-collapse collapse" aria-labelledby="heading1-h" data-bs-parent="">
+									<div class="accordion-body">
+										<p>
+											<strong>Hierarquização</strong><br />
+											A hierarquização no SUS deve proceder à divisão de níveis de atenção e garantir formas de acesso a serviços que façam parte da complexidade requerida pelo caso, nos limites dos recursos disponíveis numa dada região.
+											<a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sus" target="_blank" rel="noopener noreferrer">https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sus</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -986,9 +969,36 @@
 								</h2>
 								<div id="collapse1-i" class="accordion-collapse collapse" aria-labelledby="heading1-i" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>IMPLEMENTAÇÃO</strong></p>
-										<p>Ato de colocar em execução ou em prática; realização, efetivação ou execução de um projeto, uma tarefa etc.: a implementação do projeto deverá demorar alguns meses.</p>
-										<p>(<a href="https://www.dicio.com.br/implementacao/" target="_blank">https://www.dicio.com.br/implementacao/</a>)</p>
+										<p>
+											<strong>Impacto</strong><br />
+											Consideramos impacto a mudança social produzida por um programa ou projeto. Enquanto resultados se relacionam com as conquistas concretas, que, em geral, representam o alcance e a amplitude da iniciativa, o impacto pode ter uma natureza mais subjetiva – relacionado à ideia de transformação social.
+											<a href="https://www.idis.org.br/o-que-e-avaliacao-de-impacto/" target="_blank" rel="noopener noreferrer">https://www.idis.org.br/o-que-e-avaliacao-de-impacto/</a>
+										</p>
+										<p>
+											<strong>Indicadores</strong><br />
+											Indicadores são informações, preferencialmente numéricas, que representam um determinado fenômeno e que são utilizados para medir a organização, o processo ou o trabalho de uma pessoa.
+											<a href="https://vddig.ensp.fiocruz.br/servico-de-gestao-da-qualidade/indicadores-de-performance" target="_blank" rel="noopener noreferrer">https://vddig.ensp.fiocruz.br/servico-de-gestao-da-qualidade/indicadores-de-performance</a>
+										</p>
+										<p>
+											<strong>Indicadores sociais</strong><br />
+											Possibilitam informações importantes, o que nos permite o nível de desenvolvimento social para fins de estudo, ou visando à formulação, monitoramento e avaliação de programas e políticas públicas: Emprego e renda, educação e saúde.
+											<a href="https://repositorio.enap.gov.br" target="_blank" rel="noopener noreferrer">https://repositorio.enap.gov.br</a>
+										</p>
+										<p>
+											<strong>Insumos</strong><br />
+											Cada um dos materiais fundamentais para o desenvolvimento ou para a produção de algo (matéria-prima, força de trabalho, consumo de energia, equipamentos, mão de obra, entre outros).
+											<a href="https://www.dicio.com.br/insumo/" target="_blank" rel="noopener noreferrer">https://www.dicio.com.br/insumo/</a>
+										</p>
+										<p>
+											<strong>Integralidade</strong><br />
+											Um dos princípios do SUS, a integralidade está relacionada à condição integral, e não parcial, de compreensão do ser humano. Ou seja: o sistema de saúde deve estar preparado para ouvir o usuário, entendê-lo inserido em seu contexto social e, a partir daí, atender às demandas e necessidades desta pessoa.
+											<a href="https://pensesus.fiocruz.br/integralidade" target="_blank" rel="noopener noreferrer">https://pensesus.fiocruz.br/integralidade</a>
+										</p>
+										<p>
+											<strong>Intervenção programática</strong><br />
+											É uma ação que expressa por escrito um plano de atividades para alcançar um objetivo.
+											<a href="https://www.dicio.com.br/programatico/" target="_blank" rel="noopener noreferrer">https://www.dicio.com.br/programatico/</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -998,37 +1008,23 @@
 								</h2>
 								<div id="collapse1-m" class="accordion-collapse collapse" aria-labelledby="heading1-m" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>MOVIMENTO SOCIAL</strong></p>
-										<p>É uma forma de organização da sociedade civil, formada por ações coletivas onde os indivíduos têm como objetivo alcançar mudanças sociais através do debate político dentro de um determinado contexto na sociedade.</p>
-										<p>(<a href="https://www.significados.com.br/movimento-social/" target="_blank">https://www.significados.com.br/movimento-social/</a>)</p>
-
-										<p><strong>MULTIPLICIDADE</strong></p>
-										<p>Variedade grande ou excessiva de indivíduos, fatos, espécies etc.; abundância, prodigalidade, quantidade.</p>
-										<p>(<a href="https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/" target="_blank">https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/</a>)</p>
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="heading1-o">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-o" aria-expanded="false" aria-controls="collapse1-o">O</button>
-								</h2>
-								<div id="collapse1-o" class="accordion-collapse collapse" aria-labelledby="heading1-o" data-bs-parent="">
-									<div class="accordion-body">
-										<p><strong>ORGANIZAÇÕES DA SOCIEDADE CIVIL</strong></p>
-										<p>São entidades sem fins lucrativos que objetivam cooperar com o Estado no atendimento ao interesse público, visando produzir transformações mediante a promoção de direitos sociais, conscientização socioambiental e combate à exclusão social, sobretudo no atendimento às pessoas em situação de vulnerabilidade (os mais frágeis da sociedade).</p>
 										<p>
-											(<a
-												href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/
-											cidadania-fiscal/extensao/osc#:~:text=As%20Organiza%C3%A7%C3%B5es%20da%20
-											Sociedade%20Civil,no%20atendimento%20%C3%A0s%20pessoas%20em"
-												target="_blank"
-												>https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/ cidadania-fiscal/extensao/osc#:~:text=As%20Organiza%C3%A7%C3%B5es%20da%20 Sociedade%20Civil,no%20atendimento%20%C3%A0s%20pessoas%20em</a
-											>)
+											<strong>M&A</strong><br />
+											Monitoramento e avaliação - monitorar e avaliar consistem em realizar análises, que buscam produzir informações para revelar o curso ou o desenvolvimento de uma intervenção, no tempo. É necessário acompanhar o monitorado de forma periódica, por meio de observações, pareceres, coleta de dados, medições e indicadores.
+											<a href="https://ensino.ensp.fiocruz.br/MeA/" target="_blank" rel="noopener noreferrer">https://ensino.ensp.fiocruz.br/MeA/</a>
 										</p>
 
-										<p><strong>OUVIDORIA DO SUS</strong></p>
-										<p>É o setor responsável por receber reclamações, denúncias, sugestões, elogios e demais manifestações dos cidadãos quanto aos serviços e atendimentos prestados pelo SUS; tem como objetivo principal garantir e ampliar o acesso do cidadão na busca efetiva de seus direitos, atuando enquanto ferramenta de gestão e instrumento de fortalecimento do controle social.</p>
-										<p>(<a href="https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvidoria-do-sus" target="_blank">https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvidoria-do-sus</a>)</p>
+										<p>
+											<strong>Modelo Lógico</strong><br />
+											É uma representação visual da estrutura lógica de uma intervenção.
+											<a href="http://cadernos.ensp.fiocruz.br/csp/artigo/309/validacao-do-modelo-logico-teorico-da-vigilancia-alimentar-e-nutricional-na-atencao-primaria-em-saude" target="_blank" rel="noopener noreferrer">http://cadernos.ensp.fiocruz.br/csp/artigo/309/validacao-do-modelo-logico-teorico-da-vigilancia-alimentar-e-nutricional-na-atencao-primaria-em-saude</a>
+										</p>
+
+										<p>
+											<strong>Morbimortalidade</strong><br />
+											Refere-se à combinação de dois sub-conceitos como a morbidade e a mortalidade. Mortalidade é o conjunto dos indivíduos que morreram num dado intervalo do tempo. Morbidade é o conjunto dos indivíduos que desenvolveu determinada doença num dado intervalo do tempo.
+											<a href="https://cvs.saude.sp.gov.br/pdf/epid_visa.pdf" target="_blank" rel="noopener noreferrer">https://cvs.saude.sp.gov.br/pdf/epid_visa.pdf</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -1039,28 +1035,38 @@
 								</h2>
 								<div id="collapse1-p" class="accordion-collapse collapse" aria-labelledby="heading1-p" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>PARTICIPAÇÃO SOCIAL NO SUS</strong></p>
-										<p>É a participação das comunidades no contexto da saúde, sendo estabelecida e regulada pela Lei nº 8.142/90.</p>
-										<p>(<a href="https://pensesus.fiocruz.br/participacao-social" target="_blank">https://pensesus.fiocruz.br/participacao-social</a>)</p>
+										<p>
+											<strong>Paradigmas teóricos</strong><br />
+											O paradigma é um princípio, teoria ou conhecimento originado da pesquisa em um campo científico. Uma referência inicial que servirá de modelo para novas pesquisas.
+											<a href="https://www.significados.com.br/paradigma" target="_blank" rel="noopener noreferrer">https://www.significados.com.br/paradigma</a>
+										</p>
+										<p>
+											<strong>Participação social</strong><br />
+											É a participação das comunidades no contexto da saúde, sendo estabelecida e regulada pela Lei no 8.142/90.
+											<a href="https://pensesus.fiocruz.br/participacao-social" target="_blank" rel="noopener noreferrer">https://pensesus.fiocruz.br/participacao-social</a>
+										</p>
+										<p>
+											<strong>Planejamento ascendente</strong><br />
+											O caráter integrado das atividades de planejamento no SUS valoriza a autonomia dos entes federados, uma vez que todo o processo deve ser conduzido de maneira ascendente, desde os Municípios até a União.
+											<a href="https://bvsms.saude.gov.br/bvs/publicacoes/articulacao_interfederativa_v4_manual_planejamento_atual.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/articulacao_interfederativa_v4_manual_planejamento_atual.pdf</a>
+										</p>
 
-										<p><strong>POLÍTICAS PÚBLICAS</strong></p>
-										<p>São ações e programas que são desenvolvidos pelo Estado para garantir e colocar em prática direitos que são previstos na Constituição Federal e em outras leis. A política pública deve ser construída a partir da participação direta ou indireta da sociedade civil.</p>
-										<p>(<a href="https://portal.fiocruz.br/politicas-publicas-e-modelos-de-atencao-saude-no-pma" target="_blank">https://portal.fiocruz.br/politicas-publicas-e-modelos-de-atencao-saude-no-pma</a>)</p>
+										<p>
+											<strong>Plano de Ação Nacional</strong><br />
+											É um documento em que cada país deve especificar quais são os seus compromissos, de acordo com os princípios de governo aberto de: transparência, participação social, accountability (responsabilização e prestação de contas), combate à corrupção e inovação.
+											<a href="https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/" target="_blank" rel="noopener noreferrer">https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/</a>
+										</p>
+										<p>
+											<strong>Plano de trabalho</strong><br />
+											Entende-se por plano de trabalho o conjunto de ações que serão realizadas em um negócio ou departamento qualquer com o fim de atingir certos objetivos, como mostra um orçamento estabelecido. O conceito de plano de trabalho é aplicado em uma empresa ou em qualquer projeto pessoal ou coletivo; funciona como um guia de atuação que deve responder a três questões fundamentais: onde estamos, aonde queremos ir e como vamos conseguir.
+											<a href="https://conceitos.com/plano-trabalho/" target="_blank" rel="noopener noreferrer">https://conceitos.com/plano-trabalho/</a>
+										</p>
 
-										<p>(<a href="https://al.se.leg.br/politicas-publicas-o-que-sao-e-para-que-existem" target="_blank">https://al.se.leg.br/politicas-publicas-o-que-sao-e-para-que-existem</a>)</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="heading1-r">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-r" aria-expanded="false" aria-controls="collapse1-r">R</button>
-								</h2>
-								<div id="collapse1-r" class="accordion-collapse collapse" aria-labelledby="heading1-r" data-bs-parent="">
-									<div class="accordion-body">
-										<p><strong>RADICALIZAÇÃO</strong></p>
-										<p>Ato ou efeito de se tornar radical; intransigência: radicalização de atitudes..</p>
-										<p>(<a href="https://www.dicio.com.br/radicalizacao/" target="_blank">https://www.dicio.com.br/radicalizacao/</a>)</p>
+										<p>
+											<strong>Produtividade</strong><br />
+											É o número de bens ou serviços que um indivíduo produz em um certo tempo, efetuando uma comparação com os outros componentes da equipe e com as metas estipuladas. A produtividade obtém preocupação com a eficiência e a eficácia [...] uma organização é eficaz quando alcança suas metas ou sua participação no mercado, entretanto essa produtividade depende, também, de atingir as metas com eficiência.
+											<a href="https://www.aedb.br/seget/arquivos/artigos12/37116504.pdf" target="_blank" rel="noopener noreferrer">https://www.aedb.br/seget/arquivos/artigos12/37116504.pdf</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -1071,29 +1077,35 @@
 								</h2>
 								<div id="collapse1-s" class="accordion-collapse collapse" aria-labelledby="heading1-s" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>SUS</strong></p>
-										<p>O SUS é o sistema público de saúde do Brasil: o Sistema Único de Saúde. É a maior política de saúde pública do país e foi criado para atender todos os brasileiros, prestando serviços médicos de saúde à população.</p>
-										<p>(<a href="https://www.todapolitica.com/sus/" target="_blank">https://www.todapolitica.com/sus/</a>)</p>
+										<p>
+											<strong>Sistemático</strong><br />
+											Que se refere a um sistema, ao modo ou método de formar um todo organizado. Que contém métodos; em que há organização.
+											<a href="https://www.dicio.com.br/sistematico" target="_blank" rel="noopener noreferrer">https://www.dicio.com.br/sistematico</a>
+										</p>
+										<p>
+											<strong>Situação problema</strong><br />
+											É uma realidade de saúde insatisfatória que suscita uma intervenção. O problema é uma realidade insatisfatória superável que permite intercâmbio com outra realidade.
+											<a href="https://ares.unasus.gov.br/acervo/html/ARES/7360/1/GP2U1.pdf" target="_blank" rel="noopener noreferrer">https://ares.unasus.gov.br/acervo/html/ARES/7360/1/GP2U1.pdf</a>
+										</p>
+										<p>
+											<strong>Stakeholder</strong><br />
+											É qualquer ator (pessoa, grupo, entidade) que tenha uma relação ou interesses (diretos ou indiretos) com ou na organização.
+											<a href="https://pesquisa-eaesp.fgv.br/sites/gvpesquisa.fgv.br/files/arquivos/claudia_emiko_-_critica.pdf" target="_blank" rel="noopener noreferrer">https://pesquisa-eaesp.fgv.br/sites/gvpesquisa.fgv.br/files/arquivos/claudia_emiko_-_critica.pdf</a>
+										</p>
 									</div>
 								</div>
 							</div>
 
 							<div class="accordion-item">
-								<h2 class="accordion-header" id="heading1-t">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-t" aria-expanded="false" aria-controls="collapse1-t">T</button>
+								<h2 class="accordion-header" id="heading1-u">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-u" aria-expanded="false" aria-controls="collapse1-u">U</button>
 								</h2>
-								<div id="collapse1-t" class="accordion-collapse collapse" aria-labelledby="heading1-t" data-bs-parent="">
+								<div id="collapse1-u" class="accordion-collapse collapse" aria-labelledby="heading1-u" data-bs-parent="">
 									<div class="accordion-body">
-										<p><strong>TERRITÓRIO</strong></p>
-										<p>Território é o espaço delimitado, produzido pela sociedade, no qual existem múltiplos objetos geográficos (naturais e construídos), atores sociais – pessoas (indivíduos e grupos) e instituições –, relações (fluxos) e poderes diversos.</p>
 										<p>
-											(<a
-												href="https://www.arca.fiocruz.br/bitstream/handle/icict/39894/T%E9cnico%20de%20
-Vigil%E2ncia%20em%20Sa%FAde%20-%20Territ%F3rio%20e%20territorializa%
-E7%E3o.pdf?sequence=2"
-												target="_blank"
-												>https://www.arca.fiocruz.br/bitstream/handle/icict/39894/T%E9cnico%20de%20 Vigil%E2ncia%20em%20Sa%FAde%20-%20Territ%F3rio%20e%20territorializa% E7%E3o.pdf?sequence=2</a
-											>)
+											<strong>Universalidade</strong><br />
+											Universalidade é um dos princípios fundamentais do Sistema Único de Saúde (SUS) e determina que todos os cidadãos brasileiros, sem qualquer tipo de discriminação, têm direito ao acesso às ações e serviços de saúde.
+											<a href="https://pensesus.fiocruz.br/universalidade" target="_blank" rel="noopener noreferrer">https://pensesus.fiocruz.br/universalidade</a>
 										</p>
 									</div>
 								</div>
