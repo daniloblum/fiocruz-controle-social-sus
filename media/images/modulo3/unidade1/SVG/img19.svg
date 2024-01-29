@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.17 471.17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d88210;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <rect class="cls-1" x="112.13" y="99.49" width="10" height="190.76" transform="translate(-106.82 234.13) rotate(-68.93)"/>
+        <rect class="cls-1" x="227.56" y="38.78" width="10" height="190.76"/>
+        <rect class="cls-1" x="265.37" y="189.19" width="190.76" height="10" transform="translate(-47.76 163.03) rotate(-23.93)"/>
+        <rect class="cls-1" x="67.75" y="328.53" width="190.76" height="10" transform="translate(-200.19 257.04) rotate(-52.05)"/>
+        <rect class="cls-1" x="294.03" y="238.15" width="10" height="190.76" transform="translate(-141.88 254.43) rotate(-37.95)"/>
+      </g>
+      <path class="cls-1" d="M235.59,471.17c-62.93,0-122.09-24.5-166.58-69S0,298.51,0,235.59,24.51,113.5,69,69,172.66,0,235.59,0s122.09,24.51,166.58,69,69,103.66,69,166.58-24.5,122.09-69,166.58-103.66,69-166.58,69ZM235.59,15C113.95,15,15,113.95,15,235.59s98.95,220.58,220.59,220.58,220.58-98.95,220.58-220.58S357.22,15,235.59,15Z"/>
+    </g>
+  </g>
+</svg>
