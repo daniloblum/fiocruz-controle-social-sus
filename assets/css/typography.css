@@ -62,7 +62,7 @@ h5,
 h6,
 .h6 {
 	color: var(--_title-color);
-	font-family: var(--fio-sys-typography-head-family);
+	font-family: var(--fio-ref-typography-family-secondary-black);
 	font-weight: var(--fio-sys-typography-head-weight);
 	line-height: var(--fio-sys-typography-head-md-line-height);
 	margin-bottom: var(--fio-sys-typography-head-margin-bottom);

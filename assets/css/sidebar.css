@@ -37,8 +37,8 @@
 .sidebar .sidebar__inner .label {
 	color: var(--_sidebar-2);
 	display: block;
-	font-family: var(--fio-sys-typography-label-family);
-	font-size: var(--fio-sys-typography-label-sm-size);
+	font-family: var(--fio-ref-typography-family-secondary-light);
+	font-size: var(--fio-ref-typography-family-secondary-light);
 	font-weight: var(--fio-sys-typography-label-weight);
 	letter-spacing: var(--fio-sys-typography-label-tracking);
 	text-transform: var(--fio-sys-typography-label-transform);
@@ -86,6 +86,7 @@
 	color: var(--_sidebar-3);
 	font-size: var(--fio-sys-typography-head-md-size);
 	margin-bottom: 0;
+	font-family: var(--fio-ref-typography-family-secondary-black);
 }
 .sidebar .sidebar__title .title span {
 	display: block;

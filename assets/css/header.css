@@ -12,6 +12,16 @@
 	width: 100%;
 	z-index: 101;
 }
+body.modulo1 .header {
+	background: linear-gradient(180deg, rgba(95, 114, 39, 1), rgba(0, 48, 102, 0));
+}
+body.modulo2 .header {
+	background: linear-gradient(180deg, rgba(0, 24, 51, 1), rgba(0, 48, 102, 0));
+}
+body.modulo3 .header {
+	background: linear-gradient(180deg, rgba(142, 85, 11, 1), rgba(0, 48, 102, 0));
+}
+
 .header > *:last-child {
 	flex: 1;
 }

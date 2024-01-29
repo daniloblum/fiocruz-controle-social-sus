@@ -1,12 +1,12 @@
 /* --- CROSSWORD --- */
 
 .fio-crossword {
-	--crossword-square: 35px;
-	--crossword-square-mobile: 20px;
-	--crossword-square-font-size: 18px;
-	--crossword-square-font-size-mobile: 10px;
-	--crossword-square-line-heigh: 1;
-	--crossword-square-line-height-mobile: 1.25;
+	--_crossword-square: 35px;
+	--_crossword-square-mobile: 20px;
+	--_crossword-square-font-size: 18px;
+	--_crossword-square-font-size-mobile: 10px;
+	--_crossword-square-line-heigh: 1;
+	--_crossword-square-line-height-mobile: 1.25;
 }
 
 .fio-crossword .fio-answerbox {
@@ -23,13 +23,13 @@
 	border-style: solid;
 	border-width: 2px;
 	cursor: pointer;
-	font-size: var(--crossword-square-font-size-mobile);
+	font-size: var(--_crossword-square-font-size-mobile);
 	font-weight: bold;
-	line-height: var(--crossword-square-line-height-mobile);
-	height: var(--crossword-square-mobile);
+	line-height: var(--_crossword-square-line-height-mobile);
+	height: var(--_crossword-square-mobile);
 	overflow: hidden;
 	text-align: center;
-	width: var(--crossword-square-mobile);
+	width: var(--_crossword-square-mobile);
 }
 
 .fio-crossword .fio-boxcheated_sel {
@@ -123,9 +123,9 @@
 
 @media (min-width: 992px) {
 	.fio-crossword .fio-box {
-		font-size: var(--crossword-square-font-size);
-		line-height: var(--crossword-square-line-height);
-		height: var(--crossword-square);
-		width: var(--crossword-square);
+		font-size: var(--_crossword-square-font-size);
+		line-height: var(--_crossword-square-line-height);
+		height: var(--_crossword-square);
+		width: var(--_crossword-square);
 	}
 }

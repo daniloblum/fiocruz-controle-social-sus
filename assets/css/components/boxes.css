@@ -59,6 +59,7 @@
 .box .card .card-header .label {
 	padding-left: var(--fio-sys-spacing-padding-sm);
 	vertical-align: middle;
+	font-family: var(--fio-ref-typography-family-secondary-black);
 }
 
 .box .card .card-body p,
