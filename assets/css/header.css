@@ -84,7 +84,7 @@ body.modulo3 .header {
 
 .header.header--sticky {
 	height: 80px;
-	background: var(--fio-sys-color-neutral-white);
+	background: var(--fio-sys-color-neutral-white) !important;
 	box-shadow: var(--fio-sys-elevation-md);
 }
 .header.header--sticky .mobile-toggle-open {

@@ -84,7 +84,7 @@
 .sidebar .sidebar__title .title {
 	display: block;
 	color: var(--_sidebar-3);
-	font-size: var(--fio-sys-typography-head-md-size);
+	font-size: clamp(1.2rem, 1.5vw, 2rem);
 	margin-bottom: 0;
 	font-family: var(--fio-ref-typography-family-secondary-black);
 }
