@@ -155,6 +155,11 @@ section {
 	background-size: cover;
 }
 
+
+#page-title.home {
+	background-image: url('../../media/images/page-title-background-home-resolucoes.png');
+}
+
 #page-title.mod1 {
 	background-image: url('../../media/images/page-title-background-m1-resolucoes.png');
 }
@@ -180,6 +185,11 @@ section {
 	font-family: var(--fio-ref-typography-family-primary-bold);
 }
 
+#page-title.home .title {
+	text-align: center;
+	font-size: var(--fio-sys-typography-head-xxl-size);
+}
+
 #page-title .title .label {
 	font-family: var(--fio-ref-typography-family-secondary-light);
 	font-size: var(--fio-sys-typography-label-md-size);
@@ -201,6 +211,22 @@ section {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+
+	#page-title.home {
+		height: 100vh;
+		background-position: top;
+	}
+
+	/* --------- FIXING TROUBLES CAUSED BY WINDOWS SCALING --------- */
+
+	/* 125% Scaling */
+	/* @media (-webkit-device-pixel-ratio: 1.25) {
+		#page-title.home {
+			height: 800px;
+		}
+	} */
+
+
 	#page-title .container,
 	#page-title .container .row {
 		height: 100%;
