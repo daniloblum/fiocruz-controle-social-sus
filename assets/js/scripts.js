@@ -122,11 +122,48 @@ const modalInfos = {
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
-					<span class="h5 mb-3 d-block">Ministério da Saúde</span>
+					<p class="mb-1">Governo Federal</p>
+					<p class="mb-1">Ministério da Saúde</p>
+					<p class="mb-1">Conselho Nacional de Saúde</p>
+					<p class="mb-1">Fundação Oswaldo Cruz</p>
+					<p class="mb-1">Universidade Federal do Mato Grosso</p>
 
+					<span class="h5 mb-3 d-block">Ministério da Saúde</span>
 					<div class="mb-5">
 						<p class="mb-1">Nísia Trindade Lima</p>
 						<p class="small text-muted"><em>Ministra</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Conselho Nacional de Saúde – CNS</span>
+					
+					<div class="mb-5">
+						<p class="mb-1">Fernando Pigatto</p>
+						<p class="small text-muted"><em>Presidente</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Mesa Diretora – CNS<br/>(Triênio 2021/2024)</span>
+					
+					<div class="mb-5">
+						<p class="mb-1">Ana Lúcia Marçal Paduello</p>
+						<p class="mb-1">Fernanda Lou Sans Magano</p>
+						<p class="mb-1">Fernando Zasso Pigatto</p>
+						<p class="mb-1">Francisca Valda da Silva</p>
+						<p class="mb-1">Jurandi Frutuoso Silva</p>
+						<p class="mb-1">Madalena Margarida da Silva Teixeira</p>
+						<p class="mb-1">Maria da Conceição Silva</p>
+						<p class="mb-1">Neilton Araújo de Oliveira</p>
+						
+					</div>
+
+					<span class="h5 mb-3 d-block">Secretaria Executiva - CNS</span>
+					
+					<div class="mb-5">
+						<p class="mb-1">Ana Carolina Dantas Souza</p>
+						<p class="small text-muted"><em>Secretária-executiva</em></p>
+
+						<p class="mb-1">Gustavo Vasconcelos Bittencourt Cabral</p>
+						<p class="small text-muted"><em>Secretário-executivo substituto</em></p>
+						
 					</div>
 
 					<span class="h5 mb-3 d-block">Fundação Oswaldo Cruz – Fiocruz</span>
@@ -134,156 +171,173 @@ const modalInfos = {
 					<div class="mb-5">
 						<p class="mb-1">Mario Moreira</p>
 						<p class="small text-muted"><em>Presidente</em></p>
-						<p class="mb-1">Cristiani Vieira Machado</p>
-						<p class="small text-muted"><em>Vice-Presidência de Educação, Informação e Comunicação (VPEIC)</em></p>
 					</div>
 
-					<span class="h5 mb-3 d-block">Campus Virtual Fiocruz</span>
+					<span class="h5 mb-3 d-block">Escola Nacional de Saúde Pública Sérgio Arouca</span>
+					
+					<div class="mb-5">
+						<p class="mb-1">Marco Menezes</p>
+						<p class="small text-muted"><em>Diretor</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Universidade Federal do Mato Grosso</span>
+					
+					<div class="mb-5">
+						<p class="mb-1">Evandro Soares da Silva</p>
+						<p class="small text-muted"><em>Reitor</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Instituto de Saúde Coletiva</span>
+					
+					<div class="mb-5">
+						<p class="mb-1">Haya Del Bel</p>
+						<p class="small text-muted"><em>Diretora</em></p>
+					</div>
+					
+					
+					<span class="h5 mb-3 d-block">Formação em Monitoramento e Avaliação para Controle Social no SUS</span>
 
 					<div class="mb-5">
-
-						<p class="mb-1">Ana Cristina da Matta Furniel</p>
-						<p class="small text-muted"><em>Coordenadora-geral</em></p>
-						<p class="mb-1">Rosane Mendes</p>
-						<p class="small text-muted"><em>Coordenadora-adjunta</em></p>
-						<p class="mb-1">Adélia Araújo</p>
-						<p class="small text-muted"><em>Coordenadora de produção</em></p>
-						<p class="mb-1">Renata Bernardes David</p>
-						<p class="small text-muted"><em>Gerente de produção</em></p>
-						<p class="mb-1">Isabela Schincariol</p>
-						<p class="small text-muted"><em>Assessora de comunicação</em></p>
+						<p class="mb-1">Marly Marques da Cruz</p>
+						<p class="small text-muted"><em>Coordenação geral do curso</em></p>
+						
+						<p class="mb-1">Juliana Kabad</p>
+						<p class="small text-muted"><em>Coordenação adjunta do curso</em></p>
+						
+						<p class="mb-1">Francieli Pilatti</p>
+						<p class="mb-1">Anaís Lopes da Costa</p>
+						<p class="small text-muted"><em>Apoio à coordenação do curso</em></p>
+						
+						<p class="mb-1">Bianca Borges da Silva Leandro</p>
+						<p class="small text-muted"><em>Assessoria pedagógica do curso</em></p>
 					
-						<p class="mb-1">Fernanda Sousa</p>
-						<p class="small text-muted"><em>Designer Educacional</em></p>
+						<p class="mb-1">Maria Aparecida Santos</p>
+						<p class="small text-muted"><em>Supervisão da formação e acessibilidade do curso</em></p>
 					
-						<span class="h6 mb-3 d-block">Design de Interface</span>
+						<p class="mb-1">Amanda Cerqueira Ouriques Damaceno</p>
+						<p class="small text-muted"><em>Assistência de acessibilidade do curso</em></p>
+						
+						<p class="mb-1">Ana Cristina Reis</p>
+						<p class="mb-1">Bianca Borges da Silva Leandro</p>
+						<p class="mb-1">Fernanda Martins</p>
+						<p class="mb-1">Fernando Manuel Bessa Fernandes</p>
+						<p class="mb-1">Maria Angela Conceição Martins</p>
+						<p class="mb-1">Maria Luiza Silva Cunha</p>
+						<p class="mb-1">Michele Souza e Souza</p>
+						<p class="mb-1">Virgínia de Albuquerque Mota</p>
+						<p class="small text-muted"><em>Docentes do curso</em></p>
+						
+						<p class="mb-1">Patricia Costa</p>
+						<p class="mb-1">Rachel Guimarães</p>
+						<p class="mb-1">Reinaldo Lopes</p>
+						<p class="mb-1">Rodrigo Duarte</p>
+						<p class="small text-muted"><em>Tutoria do curso</em></p>
+						
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="small text-muted"><em>Coordenação e produção do AVA</em></p>
+						
+						<p class="mb-1">Marcelo Batista</p>
+						<p class="mb-1">Unodesign - Paulo Nery</p>
+						<p class="small text-muted"><em>Identidade visual e Projeto gráfico</em></p>
 						
 						<p class="mb-1">Aline Polycarpo</p>
-						<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
 						<p class="mb-1">Danilo Blum</p>
-						<p class="small text-muted"><em>Designer de Interface e Front-end</em></p>
 						<p class="mb-1">Luciana Nunes</p>
-						<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-						
-						<span class="h6 mb-3 d-block">Recursos Audiovisuais</span>
-						
-						<p class="mb-1">Teo Venerando</p>
-						<p class="small text-muted"><em>Edição audiovisual</em></p>
-						
-						<span class="h6 mb-3 d-block">Animação</span>
-
-						<p class="mb-1">Bruno Athaydes</p>
-						<p class="small text-muted"><em>Motion designer</em></p>
-						<p class="mb-1">Rose Renovato</p>
-						<p class="small text-muted"><em>Locutora</em></p>
+						<p class="small text-muted"><em>UX/UI Design e Front-end</em></p>
 											
-						<span class="h6 mb-3 d-block">Recursos Educacionais</span>
+						<p class="mb-1">João Henrique Belo Evangelista</p>
+						<p class="small text-muted"><em>Ilustrações</em></p>
 						
-						<p class="mb-1">Carmélia Brito</p>
-						<p class="small text-muted"><em>Bibliotecária</em></p>
-						<p class="mb-1">Natália Rasina</p>
-						<p class="small text-muted"><em>Audiodescrição</em></p>
-						<p class="mb-1">Maria Angélica Marcondes Drska</p>
-						<p class="small text-muted"><em>Revisão de Português	</em></p>
+						<p class="mb-1">Bethânia Meireles</p>
+						<p class="small text-muted"><em>Design educacional</em></p>
 						
-						<span class="h6 mb-3 d-block">Suporte Técnico de Tecnologia da Informação</span>
-					
-						<p class="mb-1">Bruno Alexandre de Oliveira</p>
-						<p class="small text-muted"><em>Desenvolvedor</em></p>
-						<p class="mb-1">Eduardo Xavier da Silva</p>
-						<p class="small text-muted"><em>Desenvolvedor</em></p>
-						<p class="mb-1">Adriano Lourenço</p>
-						<p class="small text-muted"><em>Analista de tecnologias educacionais</em></p>
-						<p class="mb-1">Orlando Terra</p>
-						<p class="small text-muted"><em>Analista de tecnologias educacionais</em></p>
-						<p class="mb-1">Fábio Carneiro</p>
-						<p class="small text-muted"><em>Designer gráfico e web designer</em></p>
+						<p class="mb-1">Lucas Frederico</p>
+						<p class="mb-1">Vania Moreira</p>
+						<p class="small text-muted"><em>Revisão de língua portuguesa e ABNT</em></p>
 					</div>
 
-					<span class="h5 mb-3 d-block">Instituto Nacional de Infectologia - INI/FIOCRUZ</span>
-					
+					<span class="h5 mb-3 d-block">Apresentação do Curso</span>
+						<div class="mb-5">
+							<p class="mb-1">Juliana KabadMarly Marques da Cruz</p>
+							<p class="mb-1">Bianca Borges da Silva Leandro</p>
+							<p class="mb-1">Larissa Pruner Marques</p>
+							<p class="small text-muted"><em>Autoria</em></p>
+						</div>
+
+					<span class="h5 mb-3 d-block">Módulo 1 - Princípios e Conceitos Básicos sobre Participação Social em Saúde</span>
 					<div class="mb-5">
-						<p class="mb-1">Valdiléa Gonçalves Veloso dos Santos</p>
-						<p class="small text-muted"><em>Diretora</em></p>
+						<p class="mb-1">Fernando Manuel Bessa Fernandes</p>
+						<p class="small text-muted"><em>Autoria</em></p>
 
-						<span class="h6 mb-3 d-block">Coordenadora geral</span>
+						<p class="mb-1">Michele Souza e Souza</p>
+						<p class="small text-muted"><em>Coordenação de produção</em></p>
 						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="small text-muted"><em>Plataforma de Pesquisa Clínica INI/ Fiocruz</em></p>
-						
-						<span class="h6 mb-3 d-block">Coordenadores acadêmicos</span>
-						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Michelle Morata de Andrade</p>
-						<p class="mb-1">Tiago Filgueiras Porto </p>
-						<p class="small text-muted"><em>Plataforma de Pesquisa Clínica INI/Fiocruz</em></p>
-					
-						<span class="h6 mb-3 d-block">Conteudistas</span>
+						<p class="mb-1">Juliana Fernandes Kabad</p>
+						<p class="mb-1">Marly Marques da Cruz</p>
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="mb-1">Maria Aparecida Santos</p>
+						<p class="small text-muted"><em>Revisão interna</em></p>
 
-						<p class="small"><strong>Módulo 1 | Conceitos, histórico e diretrizes</strong></p>
-						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Michelle Morata de Andrade</p>
-						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
-						
-						<p class=" small"><strong>Módulo 2 | Regulamentação e Fluxos de Tramitação</strong></p>
-						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Marcella Feitosa da Silva Barboza</p>
-						<p class="mb-1">Michelle Morata de Andrade</p>
-						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
-						
-						<p class="small"><strong>Moçambique</strong></p>
-						
-						<p class="mb-1">Alcina Zitha Tauancha</p>
-						<p class="small text-muted"><em>Farmacêutica-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>
-						
-						<p class="mb-1">Anchelda Santinho Mulimela</p>
-						<p class="small text-muted"><em>Revisão Linguistica-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>						
-						
-						<p class="mb-1">Igor Doby</p>
-						<p class="small text-muted"><em>Médico-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						<p class="mb-1">Eliane Cruz</p>
+						<p class="small text-muted"><em>Revisão externa</em></p>
 
-						<p class="small"><strong>Módulo 3 | Atores em pesquisa clínica</strong></p>
-						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Michelle Morata de Andrade</p>
-						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
-
-						<p class="mb-1">Ferão Américo Mandlate</p>
-						<p class="small text-muted"><em>Psicólogo-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>
-
-						<p class="mb-1">Jaciara Nissai Sallé Mussa</p>
-						<p class="small text-muted"><em>Psicológa-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>
-						
-						<p class="mb-1">Yolanda Veronica Feliciano Manganhe</p>
-						<p class="small text-muted"><em>Antropóloga-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>
-						
-						<p class="small"><strong>Módulo 4 | Eventos adversos</strong></p>
-						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Michelle Morata de Andrade</p>
-						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
-					
-						<span class="h6 mb-3 d-block">Avaliação Final</span>
-						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Michelle Morata de Andrade</p>
-						<p class="mb-1">Tiago Filgueiras Porto </p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
-					
-						<span class="h6 mb-3 d-block">Revisores Técnicos</span>
-						
-						<p class="mb-1">Valdiléa Gonçalves Veloso dos Santos</p>
-						<p class="small text-muted"><em>Diretora do Instituto Nacional de Infectologia Evandro Chagas - INI/FIOCRUZ</em></p>
+						<p class="mb-1">Fernando Manuel Bessa Fernandes</p>
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="mb-1">Michele Souza e Souza</p>
+						<p class="small text-muted"><em>Podcast</em></p>
 					</div>
-					
-					<div class="">
-						<p class="mb-1"><strong>A inclusão do conteúdo referente à regulamentação de Moçambique é resultado de uma parceria no âmbito do Programa Coopbras (Programa de Cooperação em Ensino e Pesquisa Internacional), apoiada pela Coordenação de Aperfeiçoamento de Pessoal de Nível Superior/Brasil/CAPES (código de financiamento 001)</strong></p>
+
+					<span class="h5 mb-3 d-block">Módulo 2 - Princípios e Conceitos Básicos sobre Planejamento, Monitoramento e Avaliação em Saúde</span>
+					<div class="mb-5">
+						<p class="mb-1">Ana Cristina Reis</p>
+						<p class="mb-1">Maria Luiza Silva Cunha</p>
+						<p class="mb-1">Aline Hellman</p>
+						<p class="mb-1">Fernanda Martins</p>
+						<p class="mb-1">Juliana Fernandes Kabad</p>
+						<p class="small text-muted"><em>Autoria</em></p>
+
+						<p class="mb-1">Fernanda Martins</p>
+						<p class="small text-muted"><em>Coordenação de produção</em></p>
+						
+						<p class="mb-1">Juliana Fernandes Kabad</p>
+						<p class="mb-1">Marly Marques da Cruz</p>
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="mb-1">Maria Aparecida Santos</p>
+						<p class="small text-muted"><em>Revisão interna</em></p>
+
+						<p class="mb-1">Maria Eugênia Cury</p>
+						<p class="small text-muted"><em>Revisão externa</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Módulo 3 - Contribuições do Monitoramento e Avaliação (M&A) para o Controle Social no SUS</span>
+					<div class="mb-5">
+						<p class="mb-1">Virgínia de Albuquerque Mota</p>
+						<p class="mb-1">Maria Angela Conceição Martins</p>
+						<p class="small text-muted"><em>Autoria</em></p>
+
+						<p class="mb-1">Maria Luiza Silva Cunha</p>
+						<p class="small text-muted"><em>Coordenação de produção</em></p>
+						
+						<p class="mb-1">Juliana Fernandes Kabad</p>
+						<p class="mb-1">Marly Marques da Cruz</p>
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="mb-1">Maria Aparecida Santos</p>
+						<p class="small text-muted"><em>Revisão interna</em></p>
+
+						<p class="mb-1">Ana Carolina Dantas Souza</p>
+						<p class="small text-muted"><em>Revisão externa</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Guia do Multiplicador</span>
+					<div class="mb-5">
+						<p class="mb-1">Bianca Borges da Silva Leandro</p>
+						<p class="mb-1">Juliana Kabad</p>
+						<p class="mb-1">Marly Marques da Cruz</p>
+						<p class="small text-muted"><em>Autoria</em></p>
+
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="mb-1">Maria Aparecida Santos</p>
+						<p class="small text-muted"><em>Revisão interna</em></p>
 					</div>
 				</div>
 			</div>
