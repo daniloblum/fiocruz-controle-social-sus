@@ -3,7 +3,7 @@
 .quotation blockquote {
 	align-items: center;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	font-family: var(--fio-sys-typography-quotation-family);
 	font-size: var(--fio-sys-typography-quotation-family);
 	font-weight: var(--fio-sys-typography-quotation-weight);
@@ -20,12 +20,12 @@
 	font-variation-settings: 'FILL' 1;
 	color: var(--fio-sys-color-primary-medium);
 	font-size: 3rem;
-	padding: 0 30px 0 0;
+	padding: 0 0 30px 0;
 }
 .quotation blockquote .quotation-body {
-	border-left: 2px solid var(--fio-sys-color-primary-medium);
+	border-top: 2px solid var(--fio-sys-color-primary-medium);
 	font-family: var(--fio-sys-typography-quotation-family);
-	padding-left: 30px;
+	padding-top: 30px;
 }
 .quotation blockquote .quotation-body p {
 	color: var(--fio-sys-color-primary-dark);
@@ -36,4 +36,29 @@
 	font-family: var(--fio-sys-typography-paragraph-family);
 	font-size: var(--fio-sys-typography-paragraph-sm-size);
 	float: right;
+}
+
+@media (min-width: 768px) {
+	.quotation blockquote {
+		flex-direction: row;
+	}
+	.quotation blockquote span.material-symbols-rounded {
+		padding: 0 30px 0 0;
+	}
+	.quotation blockquote .quotation-body {
+		border-top: none;
+		border-left: 2px solid var(--fio-sys-color-primary-medium);
+		font-family: var(--fio-sys-typography-quotation-family);
+		padding-left: 30px;
+	}
+	.quotation blockquote .quotation-body p {
+		color: var(--fio-sys-color-primary-dark);
+		font-family: var(--fio-sys-typography-quotation-family);
+	}
+	.quotation blockquote .quotation-autor {
+		color: var(--fio-sys-color-primary-dark);
+		font-family: var(--fio-sys-typography-paragraph-family);
+		font-size: var(--fio-sys-typography-paragraph-sm-size);
+		float: right;
+	}
 }

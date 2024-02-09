@@ -129,7 +129,7 @@ html {
 	}
 }
 
-@media (min-width:1200px){
+@media (min-width: 1200px) {
 	#layer-1 {
 		background-image: url(../../media/images/home/layer-1-1200.png);
 	}
@@ -141,7 +141,7 @@ html {
 	}
 }
 
-@media (min-width:1400px){
+@media (min-width: 1400px) {
 	#layer-1 {
 		background-image: url(../../media/images/home/layer-1-1400.png);
 	}
@@ -153,7 +153,7 @@ html {
 	}
 }
 
-@media (min-width:1900px) {
+@media (min-width: 1900px) {
 	#layer-1 {
 		background-image: url(../../media/images/home/layer-1.png);
 	}
@@ -226,7 +226,6 @@ section {
 	border-radius: var(--fio-sys-spacing-border-radius-lg);
 	height: 100%;
 	padding: var(--fio-sys-spacing-padding-lg);
-
 }
 
 #course-program .card.modulo1 {
@@ -245,7 +244,7 @@ section {
 #course-program .card .card-header {
 	background: none;
 	background-position: right bottom;
- 	background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	border: none;
 	color: var(--fio-sys-color-neutral-white);
 	display: block;
@@ -256,17 +255,17 @@ section {
 }
 
 #course-program .card .card-header h3 {
-	color:#fff;
-	font-family:var(--fio-ref-typography-family-primary-bold);
+	color: #fff;
+	font-family: var(--fio-ref-typography-family-primary-bold);
 }
 
-#course-program .card .card-header::after{
-  background-color: var(--fio-sys-color-secondary-accent-light);
-  content: '';
-  display: block;
-  height: 2px;
-  width: 40px;
-  margin-top: var(--fio-sys-spacing-margin-md);
+#course-program .card .card-header::after {
+	background-color: var(--fio-sys-color-secondary-accent-light);
+	content: '';
+	display: block;
+	height: 2px;
+	width: 40px;
+	margin-top: var(--fio-sys-spacing-margin-md);
 }
 
 /* #course-program .card.modulo1 {
@@ -302,7 +301,7 @@ section {
 	font-family: var(--fio-ref-typography-family-secondary-regular);
 	font-size: var(--fio-sys-typography-head-xs-size);
 	padding: var(--fio-sys-spacing-margin-sm) 0 var(--fio-sys-spacing-margin-lg);
-} 
+}
 
 #course-program .card .card-body :last-child {
 	margin-bottom: 0;
@@ -338,19 +337,19 @@ section {
 	#course-program .card .card-header,
 	#course-program .card .card-body,
 	#course-program .card .card-footer {
-		padding: var(--fio-sys-spacing-padding-lg); 
+		padding: var(--fio-sys-spacing-padding-lg);
 	}
 }
 
-#visual-resources .box[data-box="reflexão"] .card, 
-#visual-resources .box[data-box="para ler"] .card,
-#visual-resources .box[data-box="importante"] .card,
-#visual-resources .box[data-box="link"] .card, 
-#visual-resources .box[data-box="vídeo"] .card,
-#visual-resources .box[data-box="para escutar"] .card {
-  border-color: transparent;
-  background-color: transparent;
-  box-shadow: none;
+#visual-resources .box[data-box='reflexão'] .card,
+#visual-resources .box[data-box='para ler'] .card,
+#visual-resources .box[data-box='importante'] .card,
+#visual-resources .box[data-box='link'] .card,
+#visual-resources .box[data-box='vídeo'] .card,
+#visual-resources .box[data-box='para escutar'] .card {
+	border-color: transparent;
+	background-color: transparent;
+	box-shadow: none;
 }
 /* 
 .card-destaque {
