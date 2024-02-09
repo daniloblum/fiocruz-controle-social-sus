@@ -5,7 +5,7 @@
 	--_sidebar-4: var(--fio-sys-color-primary-dark, red);
 	--_sidebar-5: var(--fio-sys-color-primary-light-contrast, red);
 	--_sidebar-topic-1: var(--fio-sys-color-primary-medium, red);
-	--_sidebar-topic-2: var(--fio-sys-color-primary-light, red);
+	--_sidebar-topic-2: var(--fio-sys-color-primary-medium, red);
 	--_sidebar-hover: var(--fio-sys-color-primary-medium, red);
 
 	/* float: left; */
