@@ -120,16 +120,16 @@ html {
 	}
 
 	#layer-1 {
-		background-image: url(../../media/images/home/layer-1-768.png);
+		background-image: url(../../media/images/home/layer-1.png);
 	}
 	#layer-2 {
-		background-image: url(../../media/images/home/layer-2-768.png);
+		background-image: url(../../media/images/home/layer-2.png);
 	}
 	#layer-3 {
-		background-image: url(../../media/images/home/layer-3-768.png);
+		background-image: url(../../media/images/home/layer-3.png);
 	}
 	#layer-4 {
-		background-image: url(../../media/images/home/layer-4-768.png);
+		background-image: url(../../media/images/home/layer-4.png);
 	}
 }
 
@@ -143,8 +143,7 @@ html {
 	.hero-title h1 span {
 		font-size: var(--fio-sys-typography-head-lg-size);
 	}
-
-
+}
 @media (min-width: 1400px) {
 	.hero-title h1 .label {
 		font-size: var(--fio-sys-typography-label-xl-size);
