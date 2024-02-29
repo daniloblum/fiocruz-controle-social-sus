@@ -1,4 +1,4 @@
-/* --- VÍDEO --- */
+/* --- MÍDIAS --- */
 
 /* Iframe e Vídeos */
 
@@ -53,27 +53,61 @@
 	margin-top: var(--fio-sys-spacing-margin-sm);
 }
 
+/* Áudio */
+
+.audio audio {
+	border-radius:var(--fio-sys-spacing-border-radius-full);
+	width: 100%;
+}
+
+.audio audio::-webkit-media-controls-panel {
+	background-color: var(--fio-sys-color-primary-dark-contrast);
+}
+
+.audio audio::-webkit-media-controls-play-button{
+	background-color: var(--fio-sys-color-primary-light);
+	border-radius: var(--fio-sys-spacing-border-radius-full);
+  }
+  
+.audio audio::-webkit-media-controls-play-button:hover {
+	background-color: var(--fio-sys-color-primary-medium);
+  }
+
+
 /* transcription */
 
-.video .video__transcription .transcription-button {
-	margin-left: auto;
+.media .media__transcription .transcription-button {
 	margin-right: auto;
+	/* margin-left: auto; */
 	margin-bottom: var(--fio-sys-spacing-margin-md);
 }
-.video .video__transcription .transcription-button .transcription-button-label {
+
+.box .card .media .media__transcription {
+	text-align: start;
+}
+
+.media .media__transcription .transcription-button .transcription-button-label {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	text-align: center;
+	color: var(--_color3);
+	font-size: var(--fio-component-button-size);
 }
-.video .video__transcription .transcription-button[aria-expanded='true'] .transcription-button-label::after {
+
+.media .media__transcription .transcription-button .transcription-button-label {
+	color: var(--_color3);
+	font-size: var(--fio-component-button-size);
+}
+
+.media .media__transcription .transcription-button[aria-expanded='true'] .transcription-button-label::after {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C70596'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 	transform: rotate(-180deg);
 }
-.video .video__transcription .transcription-button .transcription-button-label::after {
+.media .media__transcription .transcription-button .transcription-button-label::after {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C70596'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
-.video .video__transcription .transcription-button .transcription-button-label::after {
+.media .media__transcription .transcription-button .transcription-button-label::after {
 	flex-shrink: 0;
 	width: 1.25rem;
 	height: 1.25rem;
@@ -84,11 +118,15 @@
 	background-size: 1.25rem;
 	transition: transform 0.2s ease-in-out;
 }
-.video .video__transcription .transcription-content {
+.media .media__transcription .transcription-content {
 	background-color: var(--fio-sys-color-primary-medium-contrast);
 	border-color: var(--fio-sys-color-primary-dark-contrast);
 	border-width: var(--fio-sys-spacing-border-width-md);
 	border-style: solid;
 	border-radius: var(--fio-sys-spacing-border-radius-md);
 	padding: var(--fio-sys-spacing-padding-lg);
+}
+
+.box .card .media .media__transcription .transcription-content {
+	text-align: start;
 }

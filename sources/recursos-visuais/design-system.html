@@ -1370,6 +1370,21 @@
 								<div class="card-body">
 									<span class="h6">Título do box (se houver)</span>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+
+									<div class="media audio">
+										<audio controls="true" controlslist="nodownload">
+											<source src="https://educare.fiocruz.br/file-storage/oeSYaqXx">
+											Seu navegador não suporta este formato de áudio.
+										</audio>
+										<div class="media__transcription">
+											<button class="fio-button fio-button-text-primary transcription-button collapsed" data-bs-toggle="collapse" href="#mediatranscription" role="button" aria-expanded="false" aria-controls="mediatranscription">
+												<span class="transcription-button-label">Transcrição do áudio</span>
+											</button>
+											<div class="transcription-content collapse" id="mediatranscription" style="">
+												<div class="">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1941,18 +1956,18 @@
 							<p>Quando inserir o iframe do Youtube, retirar do src <strong>"?si=abc123"</strong> e incluir <strong>"?rel=0"</strong>. Isso retirará a lista de "more videos" quando o vídeo é pausado.</p>
 						</div>
 						<div class="col-12 col-md-10 col-lg-8 mb-5">
-							<div class="video">
+							<div class="media video">
 								<div class="ratio ratio-16x9">
 									<iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 								</div>
 								<div class="video-caption">Fonte: Youtube</div>
-								<div class="video__transcription">
+								<div class="media__transcription">
 
-									<button class="fio-button fio-button-text-primary transcription-button collapsed" data-bs-toggle="collapse" href="#videotranscription" role="button" aria-expanded="false" aria-controls="videotranscription">
+									<button class="fio-button fio-button-text-primary transcription-button collapsed" data-bs-toggle="collapse" href="#mediatranscription" role="button" aria-expanded="false" aria-controls="mediatranscription">
 
 										<span class="transcription-button-label">Transcrição do vídeo</span>
 									</button>
-									<div class="transcription-content collapse" id="videotranscription">
+									<div class="transcription-content collapse" id="mediatranscription">
 										<div class="">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</div>
 									</div>
 								</div>
@@ -1965,17 +1980,17 @@
 						<h4>Tag video</h4>
 					</div>
 					<div class="col-12 col-md-10 col-lg-8 mb-5">
-						<div class="video">
+						<div class="media video">
 							<div class="ratio ratio-16x9">
 								<video controlslist="nodownload" name="media" controls="" poster="../recursos-visuais/images/thumb-videos.jpg">
 									<source src="https://educare.fiocruz.br/file-storage/rQ8ER_Sl" type="video/mp4">
 								</video>
 							</div>
-							<div class="video__transcription">
-								<button class="fio-button fio-button-text-primary transcription-button collapsed" data-bs-toggle="collapse" href="#videotranscription" role="button" aria-expanded="false" aria-controls="videotranscription">
+							<div class="media__transcription">
+								<button class="fio-button fio-button-text-primary transcription-button collapsed" data-bs-toggle="collapse" href="#mediatranscription" role="button" aria-expanded="false" aria-controls="mediatranscription">
 									<span class="transcription-button-label">Transcrição do vídeo</span>
 								</button>
-								<div class="transcription-content collapse" id="videotranscription">
+								<div class="transcription-content collapse" id="mediatranscription">
 									<div class="">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</div>
 								</div>
 							</div>
