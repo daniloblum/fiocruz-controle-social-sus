@@ -6,12 +6,17 @@
 
 footer {
 	background-color: inherit;
-	/*border-bottom: 20px solid var(--fio-sys-color-primary-medium);*/
-	border-bottom: 20px solid #cb4d00;
+	border-bottom: 20px solid var(--fio-sys-color-primary-medium);
+	/* border-bottom: 20px solid #cb4d00; */
 	padding: 60px 0 40px;
 	position: relative;
 	z-index: 99;
 }
+
+body.modulo3 footer {
+	border-bottom: 20px solid #cb4d00;
+}
+
 footer .logos {
 	padding: 20px 0;
 	display: flex;
