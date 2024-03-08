@@ -12,29 +12,56 @@
 // animate(headerTitle, 'fadeIn', '0.5s');
 
 // Intersection Observer Animation - ALL OBJECTS THAT HAVE THE CLASS "ANIMATED-OBJECT"
-const animatedObject = document.querySelectorAll('.animated-object');
-const optionsAnimatedObject = {
+// const animatedObject = document.querySelectorAll('.animated-object');
+// const optionsAnimatedObject = {
+// 	root: null, //it is the viewport
+// 	rootMargin: '-150px',
+// 	threshold: 0,
+// };
+
+// const observerObjects = new IntersectionObserver(function (entries, options) {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			// console.log(entry.target)
+// 			entry.target.classList.add('animation--in');
+// 			entry.target.classList.remove('animation--out');
+// 		} else {
+// 			// console.log(entry.target)
+// 			entry.target.classList.remove('animation--in');
+// 			entry.target.classList.add('animation--out');
+// 		}
+// 	});
+// }, optionsAnimatedObject);
+
+// animatedObject.forEach(object => {
+// 	observerObjects.observe(object);
+// });
+
+
+// Intersection Observer Animation - USING WITH ANIMATE.CSS ELEMENTS
+const animateAnimatedObject = document.querySelectorAll('.animateAnimatedObject');
+const optionsAnimateAnimatedObject = {
 	root: null, //it is the viewport
 	rootMargin: '-150px',
 	threshold: 0,
 };
 
-const observerObjects = new IntersectionObserver(function (entries, options) {
+const observerAnimateAnimatedObjects = new IntersectionObserver(function (entries, options) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			// console.log(entry.target)
-			entry.target.classList.add('animation--in');
-			entry.target.classList.remove('animation--out');
+			entry.target.classList.add('animate__animated');
+			// entry.target.classList.remove('animation--out');
 		} else {
 			// console.log(entry.target)
-			entry.target.classList.remove('animation--in');
-			entry.target.classList.add('animation--out');
+			entry.target.classList.remove('animate__animated');
+			// entry.target.classList.add('animation--out');
 		}
 	});
-}, optionsAnimatedObject);
+}, optionsAnimateAnimatedObject);
 
-animatedObject.forEach(object => {
-	observerObjects.observe(object);
+animateAnimatedObject.forEach(object => {
+	observerAnimateAnimatedObjects.observe(object);
 });
 
 
