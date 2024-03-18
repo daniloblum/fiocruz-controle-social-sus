@@ -83,7 +83,7 @@ body.modulo3 .header {
 /* Sticky */
 
 .header.header--sticky {
-	height: 80px;
+	height: 50px;
 	background: var(--fio-sys-color-neutral-white) !important;
 	box-shadow: var(--fio-sys-elevation-md);
 }
@@ -122,6 +122,7 @@ body.modulo3 .header {
 	.header .brand {
 		width: 360px;
 		height: 100%;
+		min-height:70px;
 		padding-left: 30px;
 	}
 	.header .brand img {
