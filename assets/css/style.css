@@ -212,14 +212,29 @@ section {
 	}
 
 	#page-title.mod1 {
-		background-image: url('../../media/images/page-title-background-m1-resolucoes.png');
+		/* background-image: url('../../media/images/page-title-background-m1-resolucoes.png'); */
+		/* background-image: linear-gradient(to bottom, rgba(116, 139, 48, 1), rgba(116, 139, 48, 1)), url(../../media/images/page-title-background-m1-resolucoes.png); */
+		animation:mod1 1s ease-out forwards;
 	}
+
+	@keyframes mod1 {
+		from {
+			background-image: linear-gradient(to bottom, rgba(116, 139, 48, 1), rgba(116, 139, 48, 1)), url(../../media/images/page-title-background-m1-resolucoes.png);
+		} 
+		to {
+			background-image: linear-gradient(to bottom, rgba(116, 139, 48, 0), rgba(116, 139, 48, 0)), url(../../media/images/page-title-background-m1-resolucoes.png);
+		}
+		
+	}
+
 	#page-title.mod2 {
 		background-image: url('../../media/images/page-title-background-m2-resolucoes.png');
 	}
+
 	#page-title.mod3 {
 		background-image: url('../../media/images/page-title-background-m3-resolucoes.png');
 	}
+
 	#page-title.home {
 		height: 100vh;
 		background-position: top;

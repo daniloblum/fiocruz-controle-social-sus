@@ -60,7 +60,7 @@ body.modulo3 .sidebar {
 	margin: 0px var(--fio-sys-spacing-margin-lg);
 }
 .sidebar .sidebar__section {
-	padding: var(--fio-sys-spacing-padding-lg) var(--fio-sys-spacing-margin-lg);
+	padding: var(--fio-sys-spacing-padding-lg) var(--fio-sys-spacing-margin-sm);
 }
 
 /* Close button */
@@ -89,7 +89,7 @@ body.modulo3 .sidebar {
 /* SIdebar Header with course's name */
 
 .sidebar .sidebar__inner .sidebar__title {
-	padding: var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-lg);
+	padding: var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-sm);
 	padding-right: var(--fio-sys-spacing-padding-xl);
 }
 .sidebar .sidebar__title .title {

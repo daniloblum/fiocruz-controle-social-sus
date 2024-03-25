@@ -83,7 +83,8 @@ body.modulo3 .header {
 /* Sticky */
 
 .header.header--sticky {
-	height: 50px;
+	/* height: 50px; */
+	height: 8vh;
 	background: var(--fio-sys-color-neutral-white) !important;
 	box-shadow: var(--fio-sys-elevation-md);
 }
@@ -122,15 +123,27 @@ body.modulo3 .header {
 	.header .brand {
 		width: 360px;
 		height: 100%;
-		min-height:70px;
+		padding-left: 30px;
+		align-items: center;
+		display: flex;
+	}
+
+	.header.header--sticky .brand {
+		padding: 1.5vh 0;
 		padding-left: 30px;
 	}
+
 	.header .brand img {
 		display: block;
 		height: 100%;
 		margin: 0;
+		max-height: 60%;
+	}
+
+	.header.header.header--sticky .brand img {
 		max-height: 100%;
 	}
+
 	.header .nav .desktop-toggle {
 		display: block;
 	}
@@ -151,3 +164,9 @@ body.modulo3 .header {
 		display: none;
 	}
 }
+
+/* @media (min-width: 1440px) {
+	.header.header--sticky {
+		height: 70px;
+	}
+} */

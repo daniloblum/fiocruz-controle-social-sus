@@ -138,11 +138,16 @@ html {
 		font-size: var(--fio-sys-typography-label-lg-size);
 	}
 	.hero-title h1 {
-		font-size: var(--fio-sys-typography-head-lg-size);
+		font-size: var(--fio-sys-typography-head-md-size);
 	}
 	.hero-title h1 span {
 		font-size: var(--fio-sys-typography-head-lg-size);
 	}
+
+	.heading__block .heading__title {
+		font-size: var(--fio-sys-typography-head-md-size);
+	}
+
 }
 @media (min-width: 1400px) {
 	.hero-title h1 .label {
