@@ -54,6 +54,11 @@ html {
 	text-shadow: 0 2px 4px var(--fio-sys-color-neutral-extra-dark);
 	/* translate: 0 -20%; */
 	translate: 0 -28%;
+	animation: fadeIn;
+  	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0;
 }
 .hero-title h1 .label {
 	color: var(--fio-sys-color-primary-dark-contrast);
