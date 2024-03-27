@@ -49,7 +49,7 @@ body.modulo3 .sidebar {
 	color: var(--_sidebar-2);
 	display: block;
 	font-family: var(--fio-ref-typography-family-secondary-light);
-	font-size: var(--fio-ref-typography-family-secondary-light);
+	/* font-size: clamp(.5rem, .8vw, 2rem); */
 	font-weight: var(--fio-sys-typography-label-weight);
 	letter-spacing: var(--fio-sys-typography-label-tracking);
 	text-transform: var(--fio-sys-typography-label-transform);
@@ -95,7 +95,8 @@ body.modulo3 .sidebar {
 .sidebar .sidebar__title .title {
 	display: block;
 	color: var(--_sidebar-3);
-	font-size: clamp(1.2rem, 1.5vw, 2rem);
+	/* font-size: clamp(1.2rem, 1.5vw, 2rem); */
+	font-size: clamp(1.2rem, 1vw, 2rem);
 	margin-bottom: 0;
 	font-family: var(--fio-ref-typography-family-secondary-black);
 }
@@ -157,7 +158,10 @@ body.modulo3 .sidebar {
 .sidebar__btn,
 .sidebar__btn:visited {
 	color: var(--_sidebar-1);
-	font-size: var(--fio-ref-typography-size-100);
+	/* font-size: var(--fio-ref-typography-size-100); */
+	font-size: 0.9rem;
+	padding-left: 0;
+    padding-right: 0;
 }
 .sidebar__btn:hover,
 .sidebar__btn:focus {
@@ -180,7 +184,8 @@ body.modulo3 .sidebar {
 	display: flex;
 	align-items: flex-start;
 	color: var(--_sidebar-1);
-	font-size: 0.875rem;
+	/* font-size: 0.875rem; */
+	font-size: 0.9rem;
 	font-family: var(--fio-ref-typography-family-primary-light);
 }
 .sidebar__topic-list .sidebar__list-item:hover {
@@ -273,6 +278,7 @@ body.modulo3 .sidebar {
 		transform: none;
 		overflow: visible;
 	}
+	
 	.sidebar .sidebar__inner {
 		padding: 120px 0 16px 0;
 		position: relative;
@@ -281,6 +287,11 @@ body.modulo3 .sidebar {
 		will-change: position, transform;
 		min-height: 100vh;
 	}
+
+	.sidebar .sidebar__inner .label {
+		font-size: clamp(.5rem, .85vw, 2rem);
+	}
+
 	.sidebar__topic-list .sidebar__list-item {
 		position: relative;
 		display: flex;
@@ -293,5 +304,16 @@ body.modulo3 .sidebar {
 	.sidebar {
 		max-width: 20%;
 		width: 20%;
+	}
+}
+
+@media (min-width: 1900px) {
+	.sidebar {
+		max-width: 15%;
+		width: 15%;
+	}
+
+	.sidebar .sidebar__inner .label {
+		font-size: clamp(.5rem, .75vw, 2rem);
 	}
 }

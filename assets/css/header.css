@@ -2,10 +2,12 @@
 
 .header {
 	align-items: center;
+	/* background: linear-gradient(180deg, rgba(0, 24, 51, 1), rgba(0, 24, 51, .8), rgba(0, 24, 51, .6), rgba(0, 48, 102, 0)); */
 	background: linear-gradient(180deg, rgba(0, 24, 51, 1), rgba(0, 48, 102, 0));
 	display: flex;
 	gap: 20px;
-	height: 80px;
+	/* height: 80px; */
+	height:130px;
 	justify-content: start;
 	position: fixed;
 	transition: 0.25s ease-out;
@@ -46,7 +48,7 @@ body.modulo3 .header {
 .header .brand img {
 	display: block;
 	height: 100%;
-	max-height: 80px;
+	max-height: 70px;
 }
 .header .brand .logo-black {
 	display: none;
@@ -88,6 +90,11 @@ body.modulo3 .header {
 	background: var(--fio-sys-color-neutral-white) !important;
 	box-shadow: var(--fio-sys-elevation-md);
 }
+
+.header.header--sticky .brand img {
+	max-height: 50px;
+}
+
 .header.header--sticky .mobile-toggle-open {
 	border-right: 1px solid black;
 }
@@ -114,6 +121,7 @@ body.modulo3 .header {
 
 @media (min-width: 992px) {
 	.header {
+		background: linear-gradient(180deg, rgba(0, 24, 51, 1), rgba(0, 48, 102, 0));
 		height: 100px;
 		justify-content: space-between;
 	}
@@ -129,7 +137,7 @@ body.modulo3 .header {
 	}
 
 	.header.header--sticky .brand {
-		padding: 1.5vh 0;
+		padding: 1vh 0;
 		padding-left: 30px;
 	}
 

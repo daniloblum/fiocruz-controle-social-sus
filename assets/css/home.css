@@ -52,7 +52,8 @@ html {
 	margin-bottom: 0;
 	text-align: center;
 	text-shadow: 0 2px 4px var(--fio-sys-color-neutral-extra-dark);
-	translate: 0 -20%;
+	/* translate: 0 -20%; */
+	translate: 0 -28%;
 }
 .hero-title h1 .label {
 	color: var(--fio-sys-color-primary-dark-contrast);
@@ -139,6 +140,7 @@ html {
 	}
 	.hero-title h1 {
 		font-size: var(--fio-sys-typography-head-md-size);
+		translate: 0 -20%;
 	}
 	.hero-title h1 span {
 		font-size: var(--fio-sys-typography-head-lg-size);
