@@ -20,6 +20,7 @@
 	display: block;
 	padding: var(--fio-sys-spacing-padding-md);
 	padding-left: var(--fio-sys-spacing-padding-xl);
+	font-size: var(--fio-sys-typography-paragraph-size);
 }
 .list .list-group .list-group-item:last-child {
 	border-bottom: none;
