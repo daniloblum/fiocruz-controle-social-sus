@@ -223,7 +223,7 @@ body.modulo3 .sidebar {
 	position: absolute;
 	display: block;
 	top: 30px;
-	left: 29px;
+	left: 9px;
 	width: 2px;
 	height: calc(100% - 24px);
 	background-color: var(--_sidebar-topic-1);
@@ -235,7 +235,7 @@ body.modulo3 .sidebar {
 	position: absolute;
 	display: block;
 	top: 30px;
-	left: 29px;
+	left: 9px;
 	width: 2px;
 	height: calc(100% - 24px);
 	background-color: var(--_sidebar-topic-2);

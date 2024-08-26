@@ -159,7 +159,7 @@
 	--fio-sys-typography-paragraph-tracking: var(--fio-ref-typography-spacing-normal);
 	--fio-sys-typography-paragraph-weight: var(--fio-ref-typography-weight-normal);
 	--fio-sys-typography-paragraph-margin-bottom: var(--fio-sys-spacing-vertical-md);
-	--fio-sys-typography-paragraph-size: var(--fio-ref-typography-size-100);
+	--fio-sys-typography-paragraph-size: var(--fio-ref-typography-size-125);
 	--fio-sys-typography-paragraph-height: var(--fio-ref-typography-height-lg);
 
 	--fio-sys-typography-paragraph-color: var(--fio-sys-color-text-dark);
