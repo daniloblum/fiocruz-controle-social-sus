@@ -122,12 +122,6 @@ const modalInfos = {
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
-					<p class="mb-1">Governo Federal</p>
-					<p class="mb-1">Ministério da Saúde</p>
-					<p class="mb-1">Conselho Nacional de Saúde</p>
-					<p class="mb-1">Fundação Oswaldo Cruz</p>
-					<p class="mb-1">Universidade Federal do Mato Grosso</p>
-
 					<span class="h5 mb-3 d-block">Ministério da Saúde</span>
 					<div class="mb-5">
 						<p class="mb-1">Nísia Trindade Lima</p>
@@ -171,6 +165,18 @@ const modalInfos = {
 					<div class="mb-5">
 						<p class="mb-1">Mario Moreira</p>
 						<p class="small text-muted"><em>Presidente</em></p>
+
+						<p class="mb-1">Cristiani Vieira Machado</p>
+						<p class="small text-muted"><em>Vice-Presidência de Educação, Informação e Comunicação (VPEIC)</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Campus Virtual Fiocruz</span>
+
+					<div class="mb-5">
+						<p class="mb-1">Ana Cristina da Matta Furniel</p>
+						<p class="small text-muted"><em>Coordenadora-geral</em></p>
+						<p class="mb-1">Renata Bernardes David</p>
+						<p class="small text-muted"><em>Coordenadora de produção</em></p>
 					</div>
 
 					<span class="h5 mb-3 d-block">Escola Nacional de Saúde Pública Sérgio Arouca</span>
@@ -254,6 +260,12 @@ const modalInfos = {
 						<p class="mb-1">Lucas Frederico</p>
 						<p class="mb-1">Vania Moreira</p>
 						<p class="small text-muted"><em>Revisão de língua portuguesa e ABNT</em></p>
+
+						<p class="mb-1">@PedagoVídeos</p>
+						<p class="small text-muted"><em>Produção e edição de vídeos</em></p>
+
+						<p class="mb-1">JDL Acessibilidade na Comunicação Ltda</p>
+						<p class="small text-muted"><em>Libras</em></p>
 					</div>
 
 					<span class="h5 mb-3 d-block">Apresentação do Curso</span>
