@@ -174,9 +174,19 @@ const modalInfos = {
 
 					<div class="mb-5">
 						<p class="mb-1">Ana Cristina da Matta Furniel</p>
-						<p class="small text-muted"><em>Coordenadora-geral</em></p>
+						<p class="small text-muted"><em>Coordenadora Geral</em></p>
+
+						<p class="mb-1">Rosane Mendes</p>
+						<p class="small text-muted"><em>Coordenadora Adjunta</em></p>
+
 						<p class="mb-1">Renata Bernardes David</p>
-						<p class="small text-muted"><em>Coordenadora de produção</em></p>
+						<p class="small text-muted"><em>Coordenadora de Produção</em></p>
+
+						<p class="mb-1">Juliana Dutra</p>
+						<p class="small text-muted"><em>Revisora técnica de conteúdo</em></p>
+
+						<p class="mb-1">Isabela Schincariol</p>
+						<p class="small text-muted"><em>Assessora de comunicação</em></p>
 					</div>
 
 					<span class="h5 mb-3 d-block">Escola Nacional de Saúde Pública Sérgio Arouca</span>
@@ -193,7 +203,7 @@ const modalInfos = {
 						<p class="small text-muted"><em>Reitor</em></p>
 					</div>
 
-					<span class="h5 mb-3 d-block">Instituto de Saúde Coletiva</span>
+					<span class="h5 mb-3 d-block">Instituto de Saúde Coletiva, Universidade Federal do Mato Grosso - UFMT</span>
 					
 					<div class="mb-5">
 						<p class="mb-1">Haya Del Bel</p>
@@ -201,7 +211,7 @@ const modalInfos = {
 					</div>
 					
 					
-					<span class="h5 mb-3 d-block">Formação em Monitoramento e Avaliação para Controle Social no SUS</span>
+					<span class="h5 mb-3 d-block">Coordenação Acadêmica do curso</span>
 
 					<div class="mb-5">
 						<p class="mb-1">Marly Marques da Cruz</p>
@@ -213,70 +223,42 @@ const modalInfos = {
 						<p class="mb-1">Francieli Pilatti</p>
 						<p class="mb-1">Anaís Lopes da Costa</p>
 						<p class="small text-muted"><em>Apoio à coordenação do curso</em></p>
+
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="small text-muted"><em>Coordenação de produção</em></p>
+					</div>
 						
-						<p class="mb-1">Bianca Borges da Silva Leandro</p>
-						<p class="small text-muted"><em>Assessoria pedagógica do curso</em></p>
-					
-						<p class="mb-1">Maria Aparecida Santos</p>
-						<p class="small text-muted"><em>Supervisão da formação e acessibilidade do curso</em></p>
-					
-						<p class="mb-1">Amanda Cerqueira Ouriques Damaceno</p>
-						<p class="small text-muted"><em>Assistência de acessibilidade do curso</em></p>
-						
+					<span class="h5 mb-3 d-block">Docentes das videoaulas do curso</span>
+
+					<div class="mb-5">	
 						<p class="mb-1">Ana Cristina Reis</p>
 						<p class="mb-1">Bianca Borges da Silva Leandro</p>
 						<p class="mb-1">Fernanda Martins</p>
 						<p class="mb-1">Fernando Manuel Bessa Fernandes</p>
+						<p class="mb-1">Juliana Kabad</p>
 						<p class="mb-1">Maria Angela Conceição Martins</p>
 						<p class="mb-1">Maria Luiza Silva Cunha</p>
 						<p class="mb-1">Michele Souza e Souza</p>
-						<p class="mb-1">Virgínia de Albuquerque Mota</p>
-						<p class="small text-muted"><em>Docentes do curso</em></p>
-						
-						<p class="mb-1">Patricia Costa</p>
+						<p class="mb-1">Marly Marques da Cruz</p>
+						<p class="mb-1">Patrícia Costa</p>
 						<p class="mb-1">Rachel Guimarães</p>
 						<p class="mb-1">Reinaldo Lopes</p>
 						<p class="mb-1">Rodrigo Duarte</p>
-						<p class="small text-muted"><em>Tutoria do curso</em></p>
-						
-						<p class="mb-1">Larissa Pruner Marques</p>
-						<p class="small text-muted"><em>Coordenação e produção do AVA</em></p>
-						
-						<p class="mb-1">Marcelo Batista</p>
-						<p class="mb-1">Unodesign - Paulo Nery</p>
-						<p class="small text-muted"><em>Identidade visual e Projeto gráfico</em></p>
-						
-						<p class="mb-1">Aline Polycarpo</p>
-						<p class="mb-1">Danilo Blum</p>
-						<p class="mb-1">Luciana Nunes</p>
-						<p class="small text-muted"><em>UX/UI Design e Front-end</em></p>
-											
-						<p class="mb-1">João Henrique Belo Evangelista</p>
-						<p class="small text-muted"><em>Ilustrações</em></p>
-						
-						<p class="mb-1">Bethânia Meireles</p>
-						<p class="small text-muted"><em>Design educacional</em></p>
-						
-						<p class="mb-1">Lucas Frederico</p>
-						<p class="mb-1">Vania Moreira</p>
-						<p class="small text-muted"><em>Revisão de língua portuguesa e ABNT</em></p>
-
-						<p class="mb-1">@PedagoVídeos</p>
-						<p class="small text-muted"><em>Produção e edição de vídeos</em></p>
-
-						<p class="mb-1">JDL Acessibilidade na Comunicação Ltda</p>
-						<p class="small text-muted"><em>Libras</em></p>
+						<p class="mb-1">Virgínia de Albuquerque Mota</p>
 					</div>
 
 					<span class="h5 mb-3 d-block">Apresentação do Curso</span>
-						<div class="mb-5">
-							<p class="mb-1">Juliana KabadMarly Marques da Cruz</p>
-							<p class="mb-1">Bianca Borges da Silva Leandro</p>
-							<p class="mb-1">Larissa Pruner Marques</p>
-							<p class="small text-muted"><em>Autoria</em></p>
-						</div>
+
+					<div class="mb-5">
+						<p class="mb-1">Juliana Kabad</p>
+						<p class="mb-1">Marly Marques da Cruz</p>
+						<p class="mb-1">Bianca Borges da Silva Leandro</p>
+						<p class="mb-1">Larissa Pruner Marques</p>
+						<p class="small text-muted"><em>Autoria</em></p>
+					</div>
 
 					<span class="h5 mb-3 d-block">Módulo 1 - Princípios e Conceitos Básicos sobre Participação Social em Saúde</span>
+					
 					<div class="mb-5">
 						<p class="mb-1">Fernando Manuel Bessa Fernandes</p>
 						<p class="small text-muted"><em>Autoria</em></p>
@@ -300,6 +282,7 @@ const modalInfos = {
 					</div>
 
 					<span class="h5 mb-3 d-block">Módulo 2 - Princípios e Conceitos Básicos sobre Planejamento, Monitoramento e Avaliação em Saúde</span>
+
 					<div class="mb-5">
 						<p class="mb-1">Ana Cristina Reis</p>
 						<p class="mb-1">Maria Luiza Silva Cunha</p>
@@ -322,6 +305,7 @@ const modalInfos = {
 					</div>
 
 					<span class="h5 mb-3 d-block">Módulo 3 - Contribuições do Monitoramento e Avaliação (M&A) para o Controle Social no SUS</span>
+
 					<div class="mb-5">
 						<p class="mb-1">Virgínia de Albuquerque Mota</p>
 						<p class="mb-1">Maria Angela Conceição Martins</p>
@@ -341,6 +325,7 @@ const modalInfos = {
 					</div>
 
 					<span class="h5 mb-3 d-block">Guia do Multiplicador</span>
+
 					<div class="mb-5">
 						<p class="mb-1">Bianca Borges da Silva Leandro</p>
 						<p class="mb-1">Juliana Kabad</p>
@@ -351,6 +336,72 @@ const modalInfos = {
 						<p class="mb-1">Maria Aparecida Santos</p>
 						<p class="small text-muted"><em>Revisão interna</em></p>
 					</div>
+
+					<span class="h5 mb-3 d-block">Recursos Audiovisuais</span>
+
+					<div class="mb-5">	
+						<p class="mb-1">Marcelo Batista</p>
+						<p class="mb-1">Unodesign - Paulo Nery</p>
+						<p class="small text-muted"><em>Identidade visual e Projeto gráfico</em></p>
+						
+						<p class="mb-1">Aline Polycarpo</p>
+						<p class="mb-1">Danilo Blum</p>
+						<p class="mb-1">Luciana Nunes</p>
+						<p class="small text-muted"><em>UX/UI Design e Front-end</em></p>
+											
+						<p class="mb-1">João Henrique Belo Evangelista</p>
+						<p class="small text-muted"><em>Ilustrações</em></p>
+
+						<p class="mb-1">@PedagoVideos</p>
+						<p class="small text-muted"><em>Produção e edição de vídeos</em></p>
+
+						<p class="mb-1">JDL Acessibilidade na Comunicação</p>
+						<p class="small text-muted"><em>Libras</em></p>
+
+					</div>
+
+					<span class="h5 mb-3 d-block">Recursos Educacionais</span>
+
+					<div class="mb-5">	
+						<p class="mb-1">Bianca Borges da Silva Leandro</p>
+						<p class="small text-muted"><em>Assessoria pedagógica do curso</em></p>
+
+						<p class="mb-1">Maria Aparecida Santos</p>
+						<p class="small text-muted"><em>Supervisão da formação e acessibilidade do curso</em></p>
+
+						<p class="mb-1">Amanda Cerqueira Ouriques Damaceno</p>
+						<p class="small text-muted"><em>Assistência de acessibilidade do curso</em></p>
+
+						<p class="mb-1">Bethânia Meireles</p>
+						<p class="small text-muted"><em>Design educacional</em></p>
+						
+						<p class="mb-1">Lucas Frederico</p>
+						<p class="mb-1">Vania Moreira</p>
+						<p class="small text-muted"><em>Revisão de língua portuguesa e ABNT</em></p>
+					</div>
+
+					<span class="h5 mb-3 d-block">Suporte Técnico de Tecnologia da Informaçào do Campus Virtual Fiocruz</span>
+
+					<div class="mb-5">	
+						<p class="mb-1">Bruno Alexandre de Oliveira</p>
+						<p class="small text-muted"><em>Desenvolvedor</em></p>
+
+						<p class="mb-1">Eduardo Xavier da Silva</p>
+						<p class="small text-muted"><em>Desenvolvedor</em></p>
+
+						<p class="mb-1">Adriano Lourenço</p>
+						<p class="small text-muted"><em>Analista de suporte</em></p>
+
+						<p class="mb-1">Orlando Terra</p>
+						<p class="small text-muted"><em>Analista de suporte</em></p>
+						
+						<p class="mb-1">Fábio Carneiro</p>
+						<p class="small text-muted"><em>Designer Gráfico e Web designer</em></p>
+					</div>
+
+					
+
+					
 				</div>
 			</div>
 		`,
