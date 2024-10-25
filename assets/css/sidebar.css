@@ -30,7 +30,7 @@ body.modulo3 .sidebar {
 	--_sidebar-5: #993a00;
 	--_sidebar-topic-1: var(--fio-sys-color-primary-medium, red);
 	--_sidebar-topic-2: var(--fio-sys-color-primary-light, red);
-	--_sidebar-hover: rgba(255,255,255,.2);
+	--_sidebar-hover: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar .sidebar__section--contrast {
@@ -124,7 +124,7 @@ body.modulo3 .sidebar {
 	text-align: center;
 	text-decoration: none;
 	font-family: var(--fio-ref-typography-family-primary-light);
-	font-size: var(--fio-ref-typography-size-075);
+	font-size: var(--fio-ref-typography-size-125);
 	padding: var(--fio-sys-spacing-padding-sm);
 }
 .sidebar .header-nav .nav-item .nav-link:focus {
@@ -158,10 +158,10 @@ body.modulo3 .sidebar {
 .sidebar__btn,
 .sidebar__btn:visited {
 	color: var(--_sidebar-1);
-	/* font-size: var(--fio-ref-typography-size-100); */
-	font-size: 0.9rem;
+	font-size: var(--fio-ref-typography-size-125);
+	/* font-size: 0.9rem; */
 	padding-left: 0;
-    padding-right: 0;
+	padding-right: 0;
 }
 .sidebar__btn:hover,
 .sidebar__btn:focus {
@@ -278,7 +278,7 @@ body.modulo3 .sidebar {
 		transform: none;
 		overflow: visible;
 	}
-	
+
 	.sidebar .sidebar__inner {
 		padding: 120px 0 16px 0;
 		position: relative;
@@ -289,7 +289,7 @@ body.modulo3 .sidebar {
 	}
 
 	.sidebar .sidebar__inner .label {
-		font-size: clamp(.5rem, .85vw, 2rem);
+		font-size: clamp(0.5rem, 0.85vw, 2rem);
 	}
 
 	.sidebar__topic-list .sidebar__list-item {
@@ -314,6 +314,6 @@ body.modulo3 .sidebar {
 	}
 
 	.sidebar .sidebar__inner .label {
-		font-size: clamp(.5rem, .75vw, 2rem);
+		font-size: clamp(0.5rem, 0.75vw, 2rem);
 	}
 }
